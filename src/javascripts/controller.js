@@ -59,6 +59,10 @@
       go(c, l);
     });
 
+    $('.choicename').filter( function(){
+      return $.inArray($(this).data().choicenumber, [4,5,8,9,15,16,17,23,24,25,30,31,37,38]) === -1;
+    }).removeAttr("href");
+
     $('.lever-step').on('click touchend', function(event) {
       event.preventDefault();
       t = $(event.target);
