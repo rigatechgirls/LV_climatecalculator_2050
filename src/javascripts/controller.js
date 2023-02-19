@@ -60,8 +60,10 @@
     });
 
     $('.choicename').filter( function(){
-      return $.inArray($(this).data().choicenumber, [4,5,8,9,15,16,17,23,24,25,30,31,37,38]) === -1;
-    }).removeAttr("href");
+      return $.inArray($(this).data().choicenumber, [4,5,10,11,17,18,19,25,26,28,33,34,40,41]) === -1;
+    }).removeAttr("href").hover(function() {
+      $(this).css("cursor","default")
+    });
 
     $('.lever-step').on('click touchend', function(event) {
       event.preventDefault();
