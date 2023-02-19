@@ -105,7 +105,7 @@ window.twentyfifty.views.primary_energy_chart = function() {
       .title("Siltumnīcefekta gāzes emisijas")
       .unit('ktCO2e/yr')
       .css_for_label(css_for_labels)
-      .min_value(-200)
+      .min_value(-1000)
       .max_value(8000);
   };
 

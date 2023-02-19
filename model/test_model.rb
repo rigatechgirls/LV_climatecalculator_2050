@@ -1137,19 +1137,14 @@ class TestModel < Minitest::Unit::TestCase
   def test_control_d55; assert_equal("oglekļa sekvestrēšana", worksheet.control_d55.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d56; assert_equal("Uzkrāšana, patēriņa pāslēgšana un savienojumi", worksheet.control_d56.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d57; assert_equal("Vietējā fosilā kurināmā ražošana", worksheet.control_d57.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_g5; assert_equal("0.pdf", worksheet.control_g5.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_g6; assert_equal("2.pdf", worksheet.control_g6.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_g7; assert_equal("2.pdf", worksheet.control_g7.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_g8; assert_equal("3.pdf", worksheet.control_g8.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_g9; assert_equal("4.pdf", worksheet.control_g9.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_g10; assert_equal("5.pdf", worksheet.control_g10.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_g11; assert_equal("6.pdf", worksheet.control_g11.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_g12; assert_equal("TidalStream.pdf", worksheet.control_g12.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_g13; assert_equal("TidalRange.pdf", worksheet.control_g13.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_g14; assert_equal("7.pdf", worksheet.control_g14.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_g15; assert_equal("8.pdf", worksheet.control_g15.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_g16; assert_equal("9.pdf", worksheet.control_g16.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_g17; assert_equal("10.pdf", worksheet.control_g17.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_g18; assert_equal("11.pdf", worksheet.control_g18.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_g19; assert_equal("12.pdf", worksheet.control_g19.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_g20; assert_equal("13.pdf", worksheet.control_g20.to_s.gsub(/[\n\r]+/,'')); end
