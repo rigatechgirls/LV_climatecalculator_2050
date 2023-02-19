@@ -94,6 +94,12 @@
     <!-- Modal project goals -->
     <%= ERB.new(File.read('parts/modal-project-goals.html.erb'), nil, nil, '_sub01').result(binding) %>
 
+    <!-- Modal sectors -->
+    <%= ERB.new(File.read('parts/modal-sectors.html.erb'), nil, nil, '_sub01').result(binding) %>
+
+    <!-- Modal ambitions -->
+    <%= ERB.new(File.read('parts/modal-ambitions.html.erb'), nil, nil, '_sub01').result(binding) %>
+
     <!-- This appears while the tool is waiting for data from the server -->
     <div id='calculating'>
       <span>Calculating</span>
