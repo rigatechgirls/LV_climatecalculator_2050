@@ -62,7 +62,8 @@
     $('.choicename').filter( function(){
       return $.inArray($(this).data().choicenumber, [4,5,10,11,17,18,19,25,26,28,33,34,40,41]) === -1;
     }).removeAttr("href").hover(function() {
-      $(this).css("cursor","default")
+      $(this).css("cursor","default");
+      $(this).css("color", "#000");
     });
 
     $('.lever-step').on('click touchend', function(event) {
@@ -367,7 +368,7 @@
 
 
     $('.close-sectors-sidebar').on('click touchend', function(){
-      $('.show-modal-sectors').hide();
+      $('.modal-sectors').hide();
     });
 
 

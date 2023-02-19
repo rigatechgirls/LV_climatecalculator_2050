@@ -483,7 +483,9 @@ body .block-wrapper .block-container .project-purpose {
 .modal-calculator-structure-mask.modal-calculator-structure,
 .modal-calculator-scenarious-mask.modal-calculator-scenarious,
 .modal-about-mask.modal-project-about,
-.modal-goals-mask.modal-project-goals {
+.modal-goals-mask.modal-project-goals,
+.modal-sections-mask.modal-sectors,
+.modal-sections-mask.modal-ambitions {
   display: none;
   background: #fff;
   overflow-y: scroll;
