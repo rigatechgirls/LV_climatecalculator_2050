@@ -348,6 +348,29 @@
       $('.nav-sidebar').removeClass('open');
     });
 
+    $('.show-modal-sectors').on('click touchend', function(event){
+      event.preventDefault();
+
+      $('.modal-sectors').show();
+    });
+
+    $('.show-modal-ambitions').on('click touchend', function(event){
+      event.preventDefault();
+
+      $('.modal-ambitions').show();
+    });
+
+
+    $('.close-ambitions-sidebar').on('click touchend', function(){
+      $('.modal-ambitions').hide();
+    });
+
+
+    $('.close-sectors-sidebar').on('click touchend', function(){
+      $('.show-modal-sectors').hide();
+    });
+
+
     $('.close-about-sidebar').on('click touchend', function(){
       $('.modal-project-about').hide();
     });
