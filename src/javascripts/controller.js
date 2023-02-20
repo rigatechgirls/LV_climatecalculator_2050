@@ -62,7 +62,8 @@
     $('.choicename').filter( function(){
       return $.inArray($(this).data().choicenumber, [4,5,10,11,17,18,19,25,26,28,33,34,40,41]) === -1;
     }).removeAttr("href").hover(function() {
-      $(this).css("cursor","default")
+      $(this).css("cursor","default");
+      $(this).css("color", "#000");
     });
 
     $('.lever-step').on('click touchend', function(event) {
@@ -348,6 +349,29 @@
       $('.nav-sidebar').removeClass('open');
     });
 
+    $('.show-modal-sectors').on('click touchend', function(event){
+      event.preventDefault();
+
+      $('.modal-sectors').show();
+    });
+
+    $('.show-modal-ambitions').on('click touchend', function(event){
+      event.preventDefault();
+
+      $('.modal-ambitions').show();
+    });
+
+
+    $('.close-ambitions-sidebar').on('click touchend', function(){
+      $('.modal-ambitions').hide();
+    });
+
+
+    $('.close-sectors-sidebar').on('click touchend', function(){
+      $('.modal-sectors').hide();
+    });
+
+
     $('.close-about-sidebar').on('click touchend', function(){
       $('.modal-project-about').hide();
     });
@@ -483,6 +507,11 @@
       return comparator = url_elements[5];
     }
   };
+
+  selectLevelsButton = function(level) {
+    $('.lever-step').removeClass("active");
+    $('.lever-step').filter(function(){ return $(this).data().choicelevel === level}).addClass("active");
+  }
 
   float_to_letter_map = {
     "": "0",
@@ -862,6 +891,19 @@
     return choices;
   };
 
+  showCorrectPage = function() {
+    if (window.innerWidth < 1280) {
+      $('.calculator-wrapper').addClass('active-page');
+      $('.how-to-use-wrapper').removeClass('active-page');
+      $('.about-page-wrapper').removeClass('active-page');
+
+      // change active tab header
+      $('.calculator-page').addClass('active-tab');
+      $('.how-to-use-page').removeClass('active-tab');
+      $('.about-project-page').removeClass('active-tab');
+    }
+  }
+
   window.twentyfifty.code = codeForChoices;
 
   window.twentyfifty.getChoices = getChoices;
@@ -897,5 +939,7 @@
   window.twentyfifty.stopDemo = stopDemo;
 
   window.twentyfifty.views = views;
+
+  window.onresize = showCorrectPage;
 
 }).call(this);
