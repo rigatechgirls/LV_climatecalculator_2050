@@ -627,3 +627,7 @@ body .block-wrapper .block-container .project-purpose {
   width: 150px;
   box-sizing: border-box;
 }
+
+.content-block__img-container img {
+  width: 100%;
+}
