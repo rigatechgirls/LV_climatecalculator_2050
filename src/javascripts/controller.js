@@ -892,15 +892,13 @@
   };
 
   showCorrectPage = function() {
-    console.log("window.innerWidth;", window.innerWidth);
     if (window.innerWidth < 1280) {
-      console.log("setting calc page");
       $('.calculator-wrapper').addClass('active-page');
       $('.how-to-use-wrapper').removeClass('active-page');
       $('.about-page-wrapper').removeClass('active-page');
 
       // change active tab header
-      $(this).addClass('active-tab');
+      $('.calculator-page').addClass('active-tab');
       $('.how-to-use-page').removeClass('active-tab');
       $('.about-project-page').removeClass('active-tab');
     }
