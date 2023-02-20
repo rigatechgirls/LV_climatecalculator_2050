@@ -891,6 +891,21 @@
     return choices;
   };
 
+  showCorrectPage = function() {
+    console.log("window.innerWidth;", window.innerWidth);
+    if (window.innerWidth < 1280) {
+      console.log("setting calc page");
+      $('.calculator-wrapper').addClass('active-page');
+      $('.how-to-use-wrapper').removeClass('active-page');
+      $('.about-page-wrapper').removeClass('active-page');
+
+      // change active tab header
+      $(this).addClass('active-tab');
+      $('.how-to-use-page').removeClass('active-tab');
+      $('.about-project-page').removeClass('active-tab');
+    }
+  }
+
   window.twentyfifty.code = codeForChoices;
 
   window.twentyfifty.getChoices = getChoices;
@@ -926,5 +941,7 @@
   window.twentyfifty.stopDemo = stopDemo;
 
   window.twentyfifty.views = views;
+
+  window.onresize = showCorrectPage;
 
 }).call(this);
