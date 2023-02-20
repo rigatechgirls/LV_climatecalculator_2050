@@ -622,3 +622,7 @@ body .block-wrapper .block-container .project-purpose {
 .content-block__img-container img {
   width: 100%;
 }
+
+.scenarious .content-block__img-container img {
+  width: unset;
+}
