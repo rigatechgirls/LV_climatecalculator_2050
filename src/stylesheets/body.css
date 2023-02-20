@@ -462,6 +462,10 @@ body .block-wrapper .block-container .project-purpose {
   }
 }
 
+.modal-content {
+  flex-wrap: wrap;
+}
+
 /* kopsavilkums */
 .mobile-title {
   display: flex;
@@ -498,13 +502,32 @@ body .block-wrapper .block-container .project-purpose {
 .modal-goals-mask.modal-project-goals
  {
   display: none;
-  background: #fff;
+  /* background: #fff; */
   overflow-y: scroll;
+}
+
+.modal-about-mask.modal-about-project .content-wrapper,
+.modal-how-to-use-mask.modal-how-to-use .content-wrapper,
+.modal-calculator-structure-mask.modal-calculator-structure .content-wrapper,
+.modal-calculator-scenarious-mask.modal-calculator-scenarious .content-wrapper,
+.modal-about-mask.modal-project-about .content-wrapper,
+.modal-goals-mask.modal-project-goals .content-wrapper {
+  width: 90%;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  margin-top: 10%;
 }
 
 .modal-sections-mask.modal-sectors,
 .modal-sections-mask.modal-ambitions {
   display: none;
+}
+
+.modal-sections-mask.modal-sectors .mobile-title,
+.modal-sections-mask.modal-ambitions .mobile-title {
+  width: 100%;
 }
 
 @media screen and (min-width: 1281px) {
@@ -579,4 +602,28 @@ body .block-wrapper .block-container .project-purpose {
   width: 110px;
   text-align: center;
   box-shadow: 0 0 5px #888;
+}
+
+
+.container__tab-mobile .tab-links .tab-link-item {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #49494D;
+  text-decoration: none;
+  padding: 6px 23.2px;
+  margin-right: 4px;
+  border: solid 1px #F1F1F1;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  width: 150px;
+  box-sizing: border-box;
 }
