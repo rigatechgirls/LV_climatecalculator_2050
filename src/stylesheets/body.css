@@ -615,6 +615,8 @@ body .block-wrapper .block-container .project-purpose {
   color: #646569;
   margin-bottom: 4px;
   cursor: pointer;
+  display: block;
+    text-align: right;
 }
 
 .content-block__img-container img {
