@@ -506,12 +506,12 @@ body .block-wrapper .block-container .project-purpose {
   overflow-y: scroll;
 }
 
-.modal-about-mask.modal-about-project .content-wrapper,
-.modal-how-to-use-mask.modal-how-to-use .content-wrapper,
-.modal-calculator-structure-mask.modal-calculator-structure .content-wrapper,
-.modal-calculator-scenarious-mask.modal-calculator-scenarious .content-wrapper,
-.modal-about-mask.modal-project-about .content-wrapper,
-.modal-goals-mask.modal-project-goals .content-wrapper {
+.modal-about-mask.modal-about-project .content-container,
+.modal-how-to-use-mask.modal-how-to-use .content-container,
+.modal-calculator-structure-mask.modal-calculator-structure .content-container,
+.modal-calculator-scenarious-mask.modal-calculator-scenarious .content-container,
+.modal-about-mask.modal-project-about .content-container,
+.modal-goals-mask.modal-project-goals .content-container {
   width: 90%;
   background: #fff;
   margin-left: auto;
