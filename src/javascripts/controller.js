@@ -86,6 +86,11 @@
       }
     });
 
+    selectLevels(level) {
+      $('.lever-step').removeClass("active");
+      $('.lever-step').filter(function(){ return $(this).data().choicelevel === level}).addClass("active");
+    }
+
     $("a.view").on('click touchend', function(event) {
       var t, v;
       event.preventDefault();
