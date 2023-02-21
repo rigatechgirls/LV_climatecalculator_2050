@@ -50,6 +50,7 @@ body {
 .levers-subsector-container {
   padding: 3px 8px 0;
   align-self: normal;
+  max-width: 400px;
 }
 
 .scenarious-sub-menu {
@@ -130,6 +131,10 @@ body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
   background: #FFF3D3;
   font-weight: 500;
   border-radius: 50px;
+}
+
+.calculator-wrapper .calculator-blocks .calculator-inputs .levers-container .levers-table .levers .levers-sector-container {
+  width: 100%;
 }
 
 .calculator-wrapper .calculator-blocks .calculator-inputs .levers-container .levers-table .levers .levers-sector-container div.levers-subsector-container.open {
