@@ -892,7 +892,7 @@
   };
 
   showCorrectPage = function() {
-    if (window.innerWidth < 1280) {
+    if (window.innerWidth < 1281) {
       // reset active page/tab to calculator and
       $('.calculator-wrapper').addClass('active-page');
       $('.how-to-use-wrapper').removeClass('active-page');
@@ -905,10 +905,10 @@
 
     }
 
-    if (window.innerWidth > 1279) {
+    if (window.innerWidth > 1280) {
       $('.nav-sidebar').removeClass('open');
       $(".calculator-inputs").removeClass("open");
-
+      $(".backdrop").removeClass("visible");
 
       $('.modal-how-to-use').hide();
       $('.modal-calculator-structure').hide();
