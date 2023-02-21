@@ -362,6 +362,31 @@
     });
 
 
+    $('.menu-tablet-how-to-use').on('click touchend', function(event){
+      event.preventDefault();
+
+      $('.tablet-howto').show();
+    });
+
+    $('.menu-tablet-about').on('click touchend', function(event){
+      event.preventDefault();
+
+      $('.tablet-about').show();
+    });
+
+    $('.close-tablet-howto-sidebar').on('click touchend', function(){
+      $('.tablet-howto').hide();
+    });
+
+    $('.close-tablet-about-sidebar').on('click touchend', function(){
+      $('.tablet-about').hide();
+    });
+
+
+
+
+
+
     $('.close-ambitions-sidebar').on('click touchend', function(){
       $('.modal-ambitions').hide();
     });

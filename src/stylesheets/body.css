@@ -44,6 +44,7 @@ body {
 
 .levers-container {
   max-height: 568px;
+  width: 400px;
   /* overflow-y: scroll; */
 }
 
@@ -513,7 +514,9 @@ body .block-wrapper .block-container .project-purpose {
 .modal-calculator-structure-mask.modal-calculator-structure,
 .modal-calculator-scenarious-mask.modal-calculator-scenarious,
 .modal-about-mask.modal-project-about,
-.modal-goals-mask.modal-project-goals
+.modal-goals-mask.modal-project-goals,
+.modal-tablet-mask.tablet-about,
+.modal-tablet-mask.tablet-howto
  {
   display: none;
   /* background: #fff; */
