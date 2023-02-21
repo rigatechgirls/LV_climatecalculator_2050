@@ -154,7 +154,7 @@ body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
   transform: unset;
 }
 
-@media screen and (max-width: 1281px) {
+/* @media screen and (max-width: 1281px) {
   .calculator-wrapper .calculator-blocks .calculator-inputs.open {
     position: absolute;
     background: #fff;
@@ -163,7 +163,7 @@ body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
  body .calculator-wrapper .calculator-blocks {
@@ -456,11 +456,11 @@ body .block-wrapper .block-container .project-purpose {
   display: table;
 }
 
-@media screen and (min-width: 1281px) {
+/* @media screen and (min-width: 1281px) {
   .page-links .modal-mask.nav-sidebar.open {
     display: none;
   }
-}
+} */
 
 .modal-content {
   flex-wrap: wrap;

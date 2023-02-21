@@ -199,7 +199,7 @@ window.twentyfifty.views.primary_energy_chart = function() {
       current = parseInt(this.textContent) || +d;
       i = d3.interpolateRound(current, +d);
       return function(t) {
-        return this.textContent = "" + (i(t)) + "% samzinājums 1990-2050; Mērķis ir 80%";
+        return this.textContent = "" + (i(t)) + "% samzinājums 1990-2060; Mērķis ir 80%";
       };
     });
 

@@ -893,14 +893,29 @@
 
   showCorrectPage = function() {
     if (window.innerWidth < 1280) {
+      // reset active page/tab to calculator and
       $('.calculator-wrapper').addClass('active-page');
       $('.how-to-use-wrapper').removeClass('active-page');
       $('.about-page-wrapper').removeClass('active-page');
 
-      // change active tab header
+      // change active tab to calc and
       $('.calculator-page').addClass('active-tab');
       $('.how-to-use-page').removeClass('active-tab');
       $('.about-project-page').removeClass('active-tab');
+
+    }
+
+    if (window.innerWidth > 1279) {
+      $('.nav-sidebar').removeClass('open');
+      $(".calculator-inputs").removeClass("open");
+
+
+      $('.modal-how-to-use').hide();
+      $('.modal-calculator-structure').hide();
+      $('.modal-calculator-scenarious').hide();
+
+      $('.modal-project-about').hide();
+      $('.modal-project-goals').hide();
     }
   }
 
