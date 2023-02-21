@@ -133,6 +133,10 @@ body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
   border-radius: 50px;
 }
 
+.card {
+  flex: 1;
+}
+
 .calculator-wrapper .calculator-blocks .calculator-inputs .levers-container .levers-table .levers .levers-sector-container {
   width: 100%;
 }
@@ -383,6 +387,11 @@ display: none;
   }
 }
 
+.levers-sector {
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
 
 .hide-on-mobile {
   display: flex !important;
