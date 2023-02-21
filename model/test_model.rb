@@ -57,164 +57,164 @@ class TestModel < Minitest::Unit::TestCase
   def test_control_j5; assert_equal("~13 3GW power stations delivering ~280 TWh/yr", worksheet.control_j5.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_k5; assert_equal("~30 3GW power stations delivering ~630 TWh/yr", worksheet.control_k5.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_l5; assert_equal("~50 3GW power stations delivering ~1030 TWh/yr", worksheet.control_l5.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i7; assert_equal("CCS tehnoloģija netiek komerciāli izmantota", worksheet.control_i7.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j7; assert_equal("2050.gadā apmēram 350 MW elektrostacijas ir uzceltas ar CCS", worksheet.control_j7.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k7; assert_equal("2050.gadā apmēram 650 MW elektrostacijām ir uzceltas ar CCS", worksheet.control_k7.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l7; assert_equal("2050.gadā apmēram 1500 MW elektrostacijām ir uzceltas ar CCS", worksheet.control_l7.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i8; assert_equal("Visās elektrostacijas ar CCS kā kurināmo izmanto ogles vai biomasu", worksheet.control_i8.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i7; assert_equal("CCS tehnoloģija netiek komerciāli izmantota.", worksheet.control_i7.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j7; assert_equal("2060. gadā apmēram 350 MW elektrostacijas ir uzceltas ar CCS.", worksheet.control_j7.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k7; assert_equal("2060. gadā apmēram 650 MW elektrostacijas ir uzceltas ar CCS.", worksheet.control_k7.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l7; assert_equal("2060. gadā apmēram 1500 MW elektrostacijas ir uzceltas ar CCS.", worksheet.control_l7.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i8; assert_equal("Visās elektrostacijās ar CCS kā kurināmo izmanto ogles vai biomasu.", worksheet.control_i8.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_j8; assert_equal("2/3 no elektrostacijām ar CCS izmanto cieto kurināmo (ogles, biomas) un 1/3 dabasgāzi vai biogāzi. ", worksheet.control_j8.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_k8; assert_equal("1/3 no elektrostacijām ar CCS izmanto cieto kurināmo (ogles, biomas) un 2/3 dabasgāzi vai biogāzi. ", worksheet.control_k8.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_l8; assert_equal("Visas elektrostacijas ar CCS izmanto dabasgāzi vai biogāzi. ", worksheet.control_l8.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i9; assert_equal("Netiek paredzēta atkrastes vēja staciju būvniecība", worksheet.control_i9.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j9; assert_equal("2030.gadā kopējā jauda ir 700 MW un 2060.gadā jauda sasniedz 1700 MW. ", worksheet.control_j9.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k9; assert_equal("2030.gadā kopējā jauda ir 1100 MW un 2060.gadā jauda sasniedz 2900 MW. ", worksheet.control_k9.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l9; assert_equal("2030.gadā kopējā jauda ir 1700 MW un 2060.gadā jauda sasniedz 6100 MW. ", worksheet.control_l9.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i10; assert_equal("Līdz 2030.g. kopējā jauda palielinās līdz 235 MW , bet līdz 2050.g. jauda samazinās līdz 0.", worksheet.control_i10.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j10; assert_equal("2030.gadā kopējā jauda ir 400 MW un 2060.gadā jauda sasniedz 600 MW. ", worksheet.control_j10.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k10; assert_equal("2030.gadā kopējā jauda ir 550 MW un 2060.gadā jauda sasniedz 1100 MW. ", worksheet.control_k10.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l10; assert_equal("2030.gadā kopējā jauda ir 600 MW un 2060.gadā jauda sasniedz 1700 MW. ", worksheet.control_l10.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i9; assert_equal("Netiek paredzēta atkrastes vēja staciju būvniecība.", worksheet.control_i9.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j9; assert_equal("2030. gadā kopējā jauda ir 700 MW un 2060. gadā jauda sasniedz 1700 MW. ", worksheet.control_j9.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k9; assert_equal("2030. gadā kopējā jauda ir 1100 MW un 2060. gadā jauda sasniedz 2900 MW. ", worksheet.control_k9.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l9; assert_equal("2030. gadā kopējā jauda ir 1700 MW un 2060. gadā jauda sasniedz 6100 MW. ", worksheet.control_l9.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i10; assert_equal("Līdz 2030.gadam kopējā jauda palielinās līdz 235 MW , bet līdz 2060. gadam jauda samazinās līdz 0.", worksheet.control_i10.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j10; assert_equal("2030. gadā kopējā jauda ir 400 MW un 2060. gadā jauda sasniedz 600 MW. ", worksheet.control_j10.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k10; assert_equal("2030. gadā kopējā jauda ir 550 MW un 2060. gadā jauda sasniedz 1100 MW. ", worksheet.control_k10.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l10; assert_equal("2030. gadā kopējā jauda ir 600 MW un 2060. gadā jauda sasniedz 1700 MW. ", worksheet.control_l10.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_i11; assert_equal("None in 2050", worksheet.control_i11.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_i12; assert_equal("None in 2050", worksheet.control_i12.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_i13; assert_equal("None in 2050", worksheet.control_i13.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i14; assert_equal("Biomasu izmantojošo elektrostaciju jauda līdz 2060.gadam paliek 2018.gada līmenī", worksheet.control_i14.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j14; assert_equal("2030.gadā kopējā jauda ir 200 MW un 2060.gadā jauda sasniedz 450 MW. ", worksheet.control_j14.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k14; assert_equal("2030.gadā kopējā jauda ir 250 MW un 2060.gadā jauda sasniedz 600 MW. ", worksheet.control_k14.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l14; assert_equal("2030.gadā kopējā jauda ir 450 MW un 2060.gadā jauda sasniedz 1200 MW. ", worksheet.control_l14.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i15; assert_equal("2030.gadā kopējā jauda ir 30 MW un 2060.gadā jauda sasniedz 100 MW. ", worksheet.control_i15.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j15; assert_equal("2030.gadā kopējā jauda ir 50 MW un 2060.gadā jauda sasniedz 100 MW. ", worksheet.control_j15.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k15; assert_equal("2030.gadā kopējā jauda ir 70 MW un 2060.gadā jauda sasniedz 2650 MW. ", worksheet.control_k15.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l15; assert_equal("2030.gadā kopējā jauda ir 350 MW un 2060.gadā jauda sasniedz 4500 MW. ", worksheet.control_l15.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i16; assert_equal("Tāpat kā 2018.gadā tikai nenozīmīga daļa no ēkām izmanto saules kolektorus līdz 2060.gadam", worksheet.control_i16.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j16; assert_equal("2030.g. 3 reizes un 2060.g. 6 reizes lielāka platība saules kolektoru ir uzstādīti mājsaimniecībās nekā 2018.", worksheet.control_j16.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k16; assert_equal("2030.g. 6 reizes un 2060.g. 16 reizes lielāka platība saules kolektoru ir uzstādīti mājsaimniecībās nekā 2018", worksheet.control_k16.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l16; assert_equal("2030.g. 10 reizes un 2060.g. 32 reizes lielāka platība saules kolektoru ir uzstādīti mājsaimniecībās nekā 2018", worksheet.control_l16.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i14; assert_equal("Biomasu izmantojošo elektrostaciju jauda līdz 2060. gadam paliek 2018. gada līmenī.", worksheet.control_i14.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j14; assert_equal("2030. gadā kopējā jauda ir 200 MW un 2060. gadā jauda sasniedz 450 MW. ", worksheet.control_j14.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k14; assert_equal("2030. gadā kopējā jauda ir 250 MW un 2060. gadā jauda sasniedz 600 MW. ", worksheet.control_k14.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l14; assert_equal("2030. gadā kopējā jauda ir 450 MW un 2060. gadā jauda sasniedz 1200 MW. ", worksheet.control_l14.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i15; assert_equal("2030. gadā kopējā jauda ir 30 MW un 2060. gadā jauda sasniedz 100 MW.", worksheet.control_i15.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j15; assert_equal("2030. gadā kopējā jauda ir 50 MW un 2060. gadā jauda sasniedz 100 MW.", worksheet.control_j15.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k15; assert_equal("2030. gadā kopējā jauda ir 70 MW un 2060. gadā jauda sasniedz 2650 MW. ", worksheet.control_k15.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l15; assert_equal("2030. gadā kopējā jauda ir 350 MW un 2060. gadā jauda sasniedz 4500 MW. ", worksheet.control_l15.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i16; assert_equal("Tāpat kā 2018.gadā tikai nenozīmīga daļa no ēkām izmanto saules kolektorus līdz 2060.gadam.", worksheet.control_i16.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j16; assert_equal("2030. (2060.) gadā saules kolektori mājsaimniecībās ir uzstādīti 3 reizes (6 reizes) lielākā platībā nekā 2018. gadā.", worksheet.control_j16.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k16; assert_equal("2030. (2060.) gadā saules kolektori mājsaimniecībās ir uzstādīti 6 reizes (16 reizes) lielākā platībā nekā 2018. gadā.", worksheet.control_k16.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l16; assert_equal("2030. (2060.) gadā saules kolektori mājsaimniecībās ir uzstādīti 10 reizes (32 reizes) lielākā platībā nekā 2018. gadā.", worksheet.control_l16.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_i17; assert_equal("No deployment of geothermal electricity generation", worksheet.control_i17.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_j17; assert_equal("Supply of geothermal electricity grows slowly to 7 TWh/yr in 2035 and is sustained", worksheet.control_j17.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_k17; assert_equal("Supply grows quickly reaching 21 TWh/yr by 2030 and is sustained", worksheet.control_k17.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_l17; assert_equal("Supply grows rapidly reaching 35 TWh/yr by 2030 and is sustained", worksheet.control_l17.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i18; assert_equal("Kopējā uzstādītā jauda paliek 2018.gada līmenī", worksheet.control_i18.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j18; assert_equal("Kopējā uzstādītā jauda paliek 2018.gada līmenī", worksheet.control_j18.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k18; assert_equal("Kopējā uzstādītā jauda paliek 2018.gada līmenī", worksheet.control_k18.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l18; assert_equal("Kopējā uzstādītā jauda paliek 2018.gada līmenī", worksheet.control_l18.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i19; assert_equal("2060.gadā tāpat kā 2018.gadā ļoti mazs vēja staciju skaits", worksheet.control_i19.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j19; assert_equal("Uzstādīta jauda 2030.gadā pieaug līdz 12 MW un paliek šajā līmenī līdz 2060.gadam", worksheet.control_j19.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k19; assert_equal("Uzstādīta jauda 2030.gadā pieaug līdz 24 MW un paliek šajā līmenī līdz 2060.gadam", worksheet.control_k19.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l19; assert_equal("Uzstādīta jauda 2030.gadā pieaug līdz 48 MW un paliek šajā līmenī līdz 2060.gadam", worksheet.control_l19.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i20; assert_equal("Elektroenerģijas imports tikai sistēmas pakalpojumu nodrošināšanai", worksheet.control_i20.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j20; assert_equal("2060.gadā importē apmēram 0,8 TWh elektroenerģiju", worksheet.control_j20.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k20; assert_equal("2060.gadā importē apmēram 2,0 TWh elektroenerģiju", worksheet.control_k20.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l20; assert_equal("2060.gadā importē apmēram 2,8 TWh elektroenerģiju", worksheet.control_l20.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i22; assert_equal("Pārtikas un bioenerģijas izejvielu ražošanai atvēlētās platības nemainās līdz 2060.g. ", worksheet.control_i22.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j22; assert_equal("Līdz 2060.g. bioenerģijas ražošanas izejvielu platība pieaug par 1% punktu (no kopējās zemes platības) ", worksheet.control_j22.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k22; assert_equal("Līdz 2060.g. bioenerģijas ražošanas izejvielu platība pieaug par 3,5% punktiem (no kopējās zemes platības) ", worksheet.control_k22.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l22; assert_equal("Līdz 2060.g. bioenerģijas ražošanas izejvielu platība pieaug par 7,5% punktiem (no kopējās zemes platības) ", worksheet.control_l22.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i23; assert_equal("Mājlopu skaits līdz 2060.gadam pieaug par 7% salīdzinot ar 2018.gadu", worksheet.control_i23.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j23; assert_equal("Mājlopu skaits 2060.gadā ir apmēram tāds pats kā 2018.gadā", worksheet.control_j23.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k23; assert_equal("Mājlopu skaits līdz 2060.gadam samazinās par 6% salīdzinot ar 2018.gadu", worksheet.control_k23.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l23; assert_equal("Mājlopu skaits līdz 2060.gadam samazinās par 13% salīdzinot ar 2018.gadu", worksheet.control_l23.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i24; assert_equal("Kopējasi radīto atkritumu daudzums 2060.g. ir par 35% lielāks nekā 2018.g. Pieieaug reģenerēto atkritumu daļa un samazinās noglabāto atkr. daudzums.", worksheet.control_i24.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j24; assert_equal("Kopējo radīto atkritumu daudzums 2050 .g.pieaug par 6,5% salīdzinot ar 2018.g. Straujāk pieaug reģenerēto atkritumu daudzums. ", worksheet.control_j24.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k24; assert_equal("Kopējais atkritumu daudzums 2060.g. par 17% lielāks nekā 2018.g. Plaši pielieto inovatīvas tehnoloģijas atkritumu reģenerācijai.", worksheet.control_k24.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l24; assert_equal("2060.g. kopējais atkritumu daudzums par 26% mazāks nekā 2018.g. Atkritumu reģenerācijas daļa ir liela ", worksheet.control_l24.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i25; assert_equal("Netiek paredzēta atīstība makro-aļģu audzēšanā", worksheet.control_i25.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j25; assert_equal("Makro-aļģu audzēšanai paredzētā platība 2060.gadā sasniedz 15 km2", worksheet.control_j25.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k25; assert_equal("Makro-aļģu audzēšanai paredzētā platība 2060.gadā sasniedz 30 km2", worksheet.control_k25.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l25; assert_equal("Makro-aļģu audzēšanai paredzētā platība 2060.gadā sasniedz 155 km2", worksheet.control_l25.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i26; assert_equal("Biomasa tiek pārvērsta cietā, šķidrā un gāzveida kurināmā", worksheet.control_i26.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j26; assert_equal("Biomasa pārsvarā tiek pārvērsta cietā un gāzveida kurināmā", worksheet.control_j26.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k26; assert_equal("Gandrīz visa pieejamā biomasa tiek pārvērsta šķidrā kurināmā", worksheet.control_k26.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l26; assert_equal("Gandrīz visa pieejamā biomasa tiek paŗvērsta gāzveida kurināmā", worksheet.control_l26.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i27; assert_equal(" Bioenerģijas kopējais (cietā un šķidrā) imports 2050 gadā ir nulle", worksheet.control_i27.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j27; assert_equal("Kopējais bioenerģijas imports 2060.gadā ir nulle, bet apmēram 2 PJ/gadā importē šķidro biomasu. ", worksheet.control_j27.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k27; assert_equal("2060.gadā tiek importēta apmēram 4 PJ/gadā šķidrā biomasa", worksheet.control_k27.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l27; assert_equal("Kopējais bioenerģijas imports 2060.gadā ir 9,6 PJ/gadā", worksheet.control_l27.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i30; assert_equal("2060.g. iedzīvotāji pārvietojas par 12% vairāk nekā 2018.g..Nenotiek būtiskas izmaiņas starp pārvietošanās veidiem", worksheet.control_i30.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j30; assert_equal("2060.g. iedzīvotāji pārvietojas par 7,5% vairāk nekā 2018.g.. Paražieru automašīnas veido 73,4% no kopējiem km.", worksheet.control_j30.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k30; assert_equal("2060.g. iedzīvotāji pārvietojas par 7,5% vairāk nekā 2018.g.. Paražieru automašīnas veido 71,5% no kopējiem km.", worksheet.control_k30.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l30; assert_equal("2060.g. iedzīvotāji pārvietojas tik pat cik 2018.gadā. Paražieru automašīnas veido 65,1% no kopējiem km.", worksheet.control_l30.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i18; assert_equal("Kopējā uzstādītā jauda paliek 2018. gada līmenī.", worksheet.control_i18.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j18; assert_equal("Kopējā uzstādītā jauda paliek 2018. gada līmenī.", worksheet.control_j18.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k18; assert_equal("Kopējā uzstādītā jauda paliek 2018. gada līmenī.", worksheet.control_k18.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l18; assert_equal("Kopējā uzstādītā jauda paliek 2018. gada līmenī.", worksheet.control_l18.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i19; assert_equal("2060. gadā, tāpat kā 2018.gadā, ļoti mazs vēja staciju skaits.", worksheet.control_i19.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j19; assert_equal("Uzstādītā jauda 2030. gadā pieaug līdz 12 MW un paliek šajā līmenī līdz 2060. gadam.", worksheet.control_j19.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k19; assert_equal("Uzstādīta jauda 2030. gadā pieaug līdz 24 MW un paliek šajā līmenī līdz 2060.gadam.", worksheet.control_k19.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l19; assert_equal("Uzstādīta jauda 2030. gadā pieaug līdz 48 MW un paliek šajā līmenī līdz 2060.gadam.", worksheet.control_l19.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i20; assert_equal("Elektroenerģijas imports tikai sistēmas pakalpojumu nodrošināšanai.", worksheet.control_i20.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j20; assert_equal("2060. gadā importē apmēram 0,8 TWh elektroenerģiju.", worksheet.control_j20.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k20; assert_equal("2060. gadā importē apmēram 2,0 TWh elektroenerģiju. ", worksheet.control_k20.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l20; assert_equal("2060. gadā importē apmēram 2,8 TWh elektroenerģiju.", worksheet.control_l20.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i22; assert_equal("Pārtikas un bioenerģijas izejvielu ražošanai atvēlētās platības nemainās līdz 2060. gadam. ", worksheet.control_i22.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j22; assert_equal("Līdz 2060.g. bioenerģijas ražošanas izejvielu platība pieaug par 1% punktu (no kopējās zemes platības).", worksheet.control_j22.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k22; assert_equal("Līdz 2060.g. bioenerģijas ražošanas izejvielu platība pieaug par 3,5% punktiem (no kopējās zemes platības).", worksheet.control_k22.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l22; assert_equal("Līdz 2060.g. bioenerģijas ražošanas izejvielu platība pieaug par 7,5% punktiem (no kopējās zemes platības).", worksheet.control_l22.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i23; assert_equal("Mājlopu skaits līdz 2060. gadam pieaug par 7% salīdzinot ar 2018. gadu.", worksheet.control_i23.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j23; assert_equal("Mājlopu skaits 2060. gadā ir apmēram tāds pats kā 2018.gadā.", worksheet.control_j23.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k23; assert_equal("Mājlopu skaits līdz 2060. gadam samazinās par 6% salīdzinot ar 2018. gadu.", worksheet.control_k23.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l23; assert_equal("Mājlopu skaits līdz 2060. gadam samazinās par 13% salīdzinot ar 2018. gadu.", worksheet.control_l23.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i24; assert_equal("Kopējasi radīto atkritumu daudzums 2060.g. ir par 35% lielāks nekā 2018.g. Pieieaug reģenerēto atkritumu daļa un samazinās noglabāto atkritumu daudzums.", worksheet.control_i24.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j24; assert_equal("Kopējo radīto atkritumu daudzums 2060 .gadā pieaug par 6,5% salīdzinot ar 2018.g. Straujāk pieaug reģenerēto atkritumu daudzums. ", worksheet.control_j24.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k24; assert_equal("Kopējais atkritumu daudzums 2060.gadā par 17% lielāks nekā 2018.g. Plaši pielieto inovatīvas tehnoloģijas atkritumu reģenerācijai.", worksheet.control_k24.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l24; assert_equal("2060.gadā kopējais atkritumu daudzums par 26% mazāks nekā 2018.g. Atkritumu reģenerācijas daļa ir liela.", worksheet.control_l24.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i25; assert_equal("Netiek paredzēta attīstība makro-aļģu audzēšanā.", worksheet.control_i25.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j25; assert_equal("Makro-aļģu audzēšanai paredzētā platība 2060.gadā sasniedz 15 km2.", worksheet.control_j25.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k25; assert_equal("Makro-aļģu audzēšanai paredzētā platība 2060. gadā sasniedz 30 km2.", worksheet.control_k25.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l25; assert_equal("Makro-aļģu audzēšanai paredzētā platība 2060. gadā sasniedz 155 km2.", worksheet.control_l25.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i26; assert_equal("Biomasa tiek pārvērsta cietā, šķidrā un gāzveida kurināmā.", worksheet.control_i26.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j26; assert_equal("Biomasa pārsvarā tiek pārvērsta cietā un gāzveida kurināmā.", worksheet.control_j26.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k26; assert_equal("Gandrīz visa pieejamā biomasa tiek pārvērsta šķidrā kurināmā.", worksheet.control_k26.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l26; assert_equal("Gandrīz visa pieejamā biomasa tiek pārvērsta gāzveida kurināmā.", worksheet.control_l26.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i27; assert_equal(" Bioenerģijas kopējais (cietā un šķidrā) imports 2060. gadā ir nulle.", worksheet.control_i27.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j27; assert_equal("Kopējais bioenerģijas imports 2060. gadā ir nulle, bet apmēram 2 PJ/gadā importē šķidro biomasu. ", worksheet.control_j27.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k27; assert_equal("2060. gadā tiek importēta apmēram 4 PJ/gadā šķidrā biomasa.", worksheet.control_k27.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l27; assert_equal("Kopējais bioenerģijas imports 2060. gadā ir 9,6 PJ/gadā.", worksheet.control_l27.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i30; assert_equal("2060.g. iedzīvotāji pārvietojas par 12% vairāk nekā 2018.g. Nenotiek būtiskas izmaiņas starp pārvietošanās veidiem.", worksheet.control_i30.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j30; assert_equal("2060.g. iedzīvotāji pārvietojas par 7,5% vairāk nekā 2018.g.. Pasažieru automašīnas veido 73,4% no kopējiem km.", worksheet.control_j30.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k30; assert_equal("2060.g. iedzīvotāji pārvietojas par 7,5% vairāk nekā 2018.g. Pasažieru automašīnas veido 71,5% no kopējiem km.", worksheet.control_k30.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l30; assert_equal("2060.g. iedzīvotāji pārvietojas tik pat cik 2018. gadā. Pasažieru automašīnas veido 65,1% no kopējiem km.", worksheet.control_l30.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_i31; assert_equal("2060.gadā 20% no km veic PHEV un 3,5% nulles emisiju automašīnas.", worksheet.control_i31.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j31; assert_equal("2060.gadā 54% no km veic PHEV un 10% nulles emisiju automašīnas ", worksheet.control_j31.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k31; assert_equal("2060.gadā 32% no km veic PHEV un 48% nulles emisiju automašīnas ", worksheet.control_k31.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l31; assert_equal("2060.gadā 100% no km veic nulles emisiju automašīnas", worksheet.control_l31.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i32; assert_equal("2060.gadā visas nulles emisiju automašīnas ir ar batariju lādējamās elektroautomašīnas", worksheet.control_i32.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j32; assert_equal("2060.gadā 80% no nulles emisiju automašīnām lieto baterijas un 20% ir ūdeņraža šūnas automašīnas", worksheet.control_j32.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k32; assert_equal("2060.gadā 80% ir ūdeņraža šūnas automašīnas un 20% ar batariju lādējamas", worksheet.control_k32.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l32; assert_equal("2060.gadā visas nulles emisiju automašīnas ir ūdeņraža šūnas automašīnas", worksheet.control_l32.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j31; assert_equal("2060. gadā 54% no km veic PHEV un 10% nulles emisiju automašīnas.", worksheet.control_j31.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k31; assert_equal("2060.gadā 32% no km veic PHEV un 48% nulles emisiju automašīnas. ", worksheet.control_k31.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l31; assert_equal("2060. gadā 100% no km veic nulles emisiju automašīnas.", worksheet.control_l31.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i32; assert_equal("2060.gadā visas nulles emisiju automašīnas ir ar bateriju lādējamās elektroautomašīnas.", worksheet.control_i32.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j32; assert_equal("2060. gadā 80% no nulles emisiju automašīnām lieto baterijas un 20% ir ūdeņraža šūnu automašīnas.", worksheet.control_j32.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k32; assert_equal("2060.gadā 80% ir ūdeņraža šūnu automašīnas un 20% ar bateriju lādējamas.", worksheet.control_k32.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l32; assert_equal("2060. gadā visas nulles emisiju automašīnas ir ūdeņraža šūnu automašīnas.", worksheet.control_l32.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_i33; assert_equal("Nenotiek būtiskas izmaiņas starp transportēšanas veidiem. ", worksheet.control_i33.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j33; assert_equal("Palielinās pārvadājumu daļa ar vilcieniem un attīstās dzelzceļa elektrifikācija", worksheet.control_j33.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j33; assert_equal("Palielinās pārvadājumu daļa ar vilcieniem un attīstās dzelzceļa elektrifikācija.", worksheet.control_j33.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_k33; assert_equal("Turpina palielināties pārvadājumu daļa ar vilcieniem. Kravas automašīnas un loģistika kļūst efektīvākas.", worksheet.control_k33.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_l33; assert_equal("Palielinās pārvadājumu daļa ar vilcieniem. Dzelzceļš ir pilnībā elektrificēts. Palielinās hibrīdautomašīnu daļa.", worksheet.control_l33.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i34; assert_equal("Pasažieru skaits līdz 2060.gadam palielinās par 56% un degvielas patēriņš par 35%", worksheet.control_i34.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j34; assert_equal("Pasažieru skaits līdz 2060.gadam palielinās par 56% un degvielas patēriņš par 15%", worksheet.control_j34.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k34; assert_equal("Pasažieru skaits līdz 2060.gadam palielinās par 56% un degvielas patēriņš par 10%", worksheet.control_k34.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l34; assert_equal("Pasažieru skaits līdz 2060.gadam palielinās par 56% un degvielas patēriņš paliek 2018.gada līmenī", worksheet.control_l34.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i35; assert_equal("nenotiek energoefektivitātes uzlabojumi līdz 2060.gadam. Degvielas patēriņš pieaug par 8% salīdzinot ar 2018.g.", worksheet.control_i35.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j35; assert_equal("20% no pieejamā energoefektivitātes tehniskā potenciāla īstenota. Degvielas patēriņš samazinās par 11%", worksheet.control_j35.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k35; assert_equal("1/3 no pieejamā tehniskā energoefektivitātes potenciāla īstenota. Degvielas patēriņš samazinās par 28%", worksheet.control_k35.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l35; assert_equal("50% no pieejamā energoefektivitātes tehniskā potenciāla īstenota. Degvielas patēriņš samazinās par 44%", worksheet.control_l35.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i37; assert_equal("Vidējā temperatūra mājokļos palielinās par 2 grādiem C", worksheet.control_i37.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j37; assert_equal("Vidējā temperatūra mājokļos palielinās par 0.5 grādiem C", worksheet.control_j37.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k37; assert_equal("Vidējā temperatūra mājokļos samazinās par 0.5 grādiem C", worksheet.control_k37.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l37; assert_equal("Vidējā temperatūra mājokļos samazinās par 1.5 grādiem C", worksheet.control_l37.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i38; assert_equal("2060.gadā renovētas ir apmēram 35% no esošajām ēkām 2018.gadā", worksheet.control_i38.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j38; assert_equal("2060.gadā renovētas ir apmēram 40% no esošajām ēkām 2018.gadā. Specifiskais enerģija spatēriņš samazinās par 31,5%", worksheet.control_j38.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k38; assert_equal("2060.gadā renovētas ir apmēram 50% no esošajām ēkām 2018.gadā. Specifiskais enerģijas patēriņš samazinās par 36,5%", worksheet.control_k38.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l38; assert_equal("2060.gadā renovētas ir apmēram 65% no esošajām ēkām 2018.gadā. Specifiskais enerģijas patēriņš samazinās par 46%", worksheet.control_l38.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i39; assert_equal("Elektroenerģijas izmantošana apkurei 2060.g. apmēram paliek 2018.gada līmenī", worksheet.control_i39.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j39; assert_equal(" Apmēram 20% no jaunajām apkures iekārtām izmanto elektroenerģiju ", worksheet.control_j39.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k39; assert_equal("Apmēram 50% no jaunajām apkures iekārtām izmanto elektroenerģiju ", worksheet.control_k39.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l39; assert_equal("Apmēram 80% - 100% no jaunajām apkures iekārtām izmanto elektroenerģiju ", worksheet.control_l39.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i40; assert_equal("Dominējošais apkures veids ir katli ar gāzes izmantošanu (dabasgāze un biometāns)", worksheet.control_i40.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j40; assert_equal("Dominējošais apkures veids ir katli ar cietās biomasas izmantošanu ", worksheet.control_j40.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k40; assert_equal("Dominējošais apkures veids ir siltumenerģijas piegāde no CSAS ", worksheet.control_k40.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l40; assert_equal("Dažādi apkures veidi: katli ar gāzes, cietās biomasas izmantošanu un CSAS", worksheet.control_l40.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i42; assert_equal("Elektroenerģijas patēriņš apgaismojumam un elektroierīcēm mājsaimniecībai pieaug par 20%, salīdzinot ar 2018.g.", worksheet.control_i42.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j42; assert_equal("Elektroenerģijas patēriņš apgaismojumam un elektroierīcēm mājsaimniecībai paliek nemainīgs, salīdzinot ar 2018.g.", worksheet.control_j42.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k42; assert_equal("Elektroenerģijas patēriņš apgaismojumam un elektroierīcēm mājsaimniecībai samazinās par 40%, salīdzinot ar 2018.g.", worksheet.control_k42.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l42; assert_equal("Elektroenerģijas patēriņš apgaismojumam un elektroierīcēm mājsaimniecībai samazinās par 60%, salīdzinot ar 2018.g.", worksheet.control_l42.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i43; assert_equal("2060.g. sadalījums starp ierīcēm paliek tāds pats kā 2018.gadā", worksheet.control_i43.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i34; assert_equal("Pasažieru skaits līdz 2060.gadam palielinās par 56% un degvielas patēriņš par 35%.", worksheet.control_i34.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j34; assert_equal("Pasažieru skaits līdz 2060. gadam palielinās par 56% un degvielas patēriņš par 15%.", worksheet.control_j34.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k34; assert_equal("Pasažieru skaits līdz 2060. gadam palielinās par 56% un degvielas patēriņš par 10%.", worksheet.control_k34.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l34; assert_equal("Pasažieru skaits līdz 2060. gadam palielinās par 56% un degvielas patēriņš paliek 2018.gada līmenī.", worksheet.control_l34.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i35; assert_equal("Nenotiek energoefektivitātes uzlabojumi līdz 2060. gadam. Degvielas patēriņš pieaug par 8% salīdzinot ar 2018. gadu.", worksheet.control_i35.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j35; assert_equal("20% no pieejamā energoefektivitātes tehniskā potenciāla īstenota. Degvielas patēriņš samazinās par 11%.", worksheet.control_j35.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k35; assert_equal("1/3 no pieejamā tehniskā energoefektivitātes potenciāla īstenota. Degvielas patēriņš samazinās par 28%.", worksheet.control_k35.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l35; assert_equal("50% no pieejamā energoefektivitātes tehniskā potenciāla īstenota. Degvielas patēriņš samazinās par 44%.", worksheet.control_l35.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i37; assert_equal("Vidējā temperatūra mājokļos palielinās par 2 grādiem C.", worksheet.control_i37.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j37; assert_equal("Vidējā temperatūra mājokļos palielinās par 0.5 grādiem C.", worksheet.control_j37.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k37; assert_equal("Vidējā temperatūra mājokļos samazinās par 0.5 grādiem C.", worksheet.control_k37.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l37; assert_equal("Vidējā temperatūra mājokļos samazinās par 1.5 grādiem C.", worksheet.control_l37.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i38; assert_equal("2060. gadā renovētas ir apmēram 35% no esošajām ēkām 2018. gadā.", worksheet.control_i38.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j38; assert_equal("2060.gadā renovētas ir apmēram 40% no esošajām ēkām 2018.gadā. Specifiskais enerģija spatēriņš samazinās par 31,5%.", worksheet.control_j38.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k38; assert_equal("2060.gadā renovētas ir apmēram 50% no esošajām ēkām 2018.gadā. Specifiskais enerģijas patēriņš samazinās par 36,5%.", worksheet.control_k38.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l38; assert_equal("2060.gadā renovētas ir apmēram 65% no esošajām ēkām 2018.gadā. Specifiskais enerģijas patēriņš samazinās par 46%.", worksheet.control_l38.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i39; assert_equal("Elektroenerģijas izmantošana apkurei 2060.g. paliek apmēram 2018.gada līmenī.", worksheet.control_i39.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j39; assert_equal(" Apmēram 20% no jaunajām apkures iekārtām izmanto elektroenerģiju.", worksheet.control_j39.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k39; assert_equal("Apmēram 50% no jaunajām apkures iekārtām izmanto elektroenerģiju.", worksheet.control_k39.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l39; assert_equal("Apmēram 80% - 100% no jaunajām apkures iekārtām izmanto elektroenerģiju.", worksheet.control_l39.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i40; assert_equal("Dominējošais apkures veids ir katli ar gāzes izmantošanu (dabasgāze un biometāns).", worksheet.control_i40.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j40; assert_equal("Dominējošais apkures veids ir katli ar cietās biomasas izmantošanu.", worksheet.control_j40.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k40; assert_equal("Dominējošais apkures veids ir siltumenerģijas piegāde no CSAS.", worksheet.control_k40.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l40; assert_equal("Dažādi apkures veidi: katli ar gāzes, cietās biomasas izmantošanu un CSAS.", worksheet.control_l40.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i42; assert_equal("Elektroenerģijas patēriņš apgaismojumam un elektroierīcēm mājsaimniecībai pieaug par 20%, salīdzinot ar 2018. gadu.", worksheet.control_i42.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j42; assert_equal("Elektroenerģijas patēriņš apgaismojumam un elektroierīcēm mājsaimniecībai paliek nemainīgs, salīdzinot ar 2018. gadu.", worksheet.control_j42.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k42; assert_equal("Elektroenerģijas patēriņš apgaismojumam un elektroierīcēm mājsaimniecībai samazinās par 40%, salīdzinot ar 2018. gadu.", worksheet.control_k42.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l42; assert_equal("Elektroenerģijas patēriņš apgaismojumam un elektroierīcēm mājsaimniecībai samazinās par 60%, salīdzinot ar 2018. gadu.", worksheet.control_l42.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i43; assert_equal("2060.g. sadalījums starp ierīcēm paliek tāds pats kā 2018.gadā.", worksheet.control_i43.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_j43; assert_equal("2060.g. tiek izmantotas tikai elektroierīces ēdienu gatavošanai.", worksheet.control_j43.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k43; assert_equal("Tāds pats kā B", worksheet.control_k43.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l43; assert_equal("Tāds pats kā B", worksheet.control_l43.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i45; assert_equal("2060.g. saražotās produkcijas pievienotā vērtība gandrīz dubultojas salīdzinot ar 2018.g.", worksheet.control_i45.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j45; assert_equal("2060.g. saražotās produkcijas pievienotā vērtība ir par apmēram 60% vairāk nekā 2018.g.", worksheet.control_j45.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k45; assert_equal("2060.g. saražotās produkcijas pievienotā vērtība ir par apmēram 45% vairāk nekā 2018.g.", worksheet.control_k45.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l45; assert_equal("Tāds pats kā C", worksheet.control_l45.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i46; assert_equal("Mazi uzlabojumi energointensitātes samazināšanai un mazliet palielinās elektroenerģijas patēriņā daļa", worksheet.control_i46.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j46; assert_equal("Vidēji uzlabojumi energointensitātes samazināšanai un gandrīz dubultojas elektroenerģijas patēriņa daļa", worksheet.control_j46.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k46; assert_equal("Straujš energointensitātes uzlabojums un gandrīz trīskāršojas elektroenerģijas patēriņa daļa. CCS tehnoloģiju izmantošana", worksheet.control_k46.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l46; assert_equal("Tāds pats kā 3", worksheet.control_l46.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i48; assert_equal("Enerģijas patēriņš apkurei pieaug par 27%, siltā ūdens sagatavošanai par 28% un dzesēšanai par 80%", worksheet.control_i48.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j48; assert_equal("Enerģijas patēriņš apkurei pieaug par 13%, siltā ūdens sagatavošanai par 19% un dzesēšanai par 60%", worksheet.control_j48.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k48; assert_equal("Enerģijas patēriņš apkurei samazinās par 3%, siltā ūdens sagatavošanai pieaug par 12% un dzesēšanai par 30%", worksheet.control_k48.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l48; assert_equal("Enerģijas patēriņš apkurei samazinās par 20%, siltā ūdens sagatavošanai paleik nemainīgs un dzesēšanai samazinās par 25%", worksheet.control_l48.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i49; assert_equal("Elektroenerģijas izmantošana apkurei 2060.g. apmēram paliek 2018.gada līmenī", worksheet.control_i49.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j49; assert_equal("Apmēram 20% no apkures iekārtām izmanto elektroenerģiju ", worksheet.control_j49.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k49; assert_equal("Llīdz 50% no apkures iekārtām izmanto elektroenerģiju ", worksheet.control_k49.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l49; assert_equal("Apmēram 80-100% no apkures iekārtām izmanto elektroenerģiju ", worksheet.control_l49.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i50; assert_equal("Dominējošais apkures veids ir katli vai CHP ar gāzes izmantošanu (dabasgāze un biometāns)", worksheet.control_i50.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j50; assert_equal("Dominējošais apkures veids ir katli ar cietās biomasas izmantošanu ", worksheet.control_j50.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k50; assert_equal("Dominējošais apkures veids ir siltumenerģijas piegāde no CSAS ", worksheet.control_k50.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l50; assert_equal("Dažādi apkures veidi: katli ar gāzes, cietās biomasas izmantošanu un CSAS", worksheet.control_l50.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k43; assert_equal("Tāds pats kā B.", worksheet.control_k43.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l43; assert_equal("Tāds pats kā B.", worksheet.control_l43.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i45; assert_equal("2060.g. saražotās produkcijas pievienotā vērtība gandrīz dubultojas salīdzinot ar 2018.gadu.", worksheet.control_i45.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j45; assert_equal("2060.g. saražotās produkcijas pievienotā vērtība ir par apmēram 60% lielāka nekā 2018.g.", worksheet.control_j45.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k45; assert_equal("2060.g. saražotās produkcijas pievienotā vērtība ir par apmēram 45% lielāka nekā 2018.g.", worksheet.control_k45.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l45; assert_equal("Tāds pats kā C.", worksheet.control_l45.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i46; assert_equal("Mazi uzlabojumi energointensitātes samazināšanai un mazliet palielinās elektroenerģijas patēriņa daļa.", worksheet.control_i46.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j46; assert_equal("Vidēji uzlabojumi energointensitātes samazināšanai un gandrīz dubultojas elektroenerģijas patēriņa daļa.", worksheet.control_j46.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k46; assert_equal("Straujš energointensitātes uzlabojums un gandrīz trīskāršojas elektroenerģijas patēriņa daļa. CCS tehnoloģiju izmantošana.", worksheet.control_k46.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l46; assert_equal("Tāds pats kā 3.", worksheet.control_l46.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i48; assert_equal("Enerģijas patēriņš apkurei pieaug par 27%, siltā ūdens sagatavošanai par 28% un dzesēšanai par 80%.", worksheet.control_i48.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j48; assert_equal("Enerģijas patēriņš apkurei pieaug par 13%, siltā ūdens sagatavošanai par 19% un dzesēšanai par 60%.", worksheet.control_j48.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k48; assert_equal("Enerģijas patēriņš apkurei samazinās par 3%, siltā ūdens sagatavošanai pieaug par 12% un dzesēšanai par 30%.", worksheet.control_k48.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l48; assert_equal("Enerģijas patēriņš apkurei samazinās par 20%, siltā ūdens sagatavošanai paleik nemainīgs un dzesēšanai samazinās par 25%.", worksheet.control_l48.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i49; assert_equal("Elektroenerģijas izmantošana apkurei 2060.g. paliek apmēram 2018.gada līmenī.", worksheet.control_i49.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j49; assert_equal("Apmēram 20% no apkures iekārtām izmanto elektroenerģiju. ", worksheet.control_j49.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k49; assert_equal("Līdz 50% no apkures iekārtām izmanto elektroenerģiju.", worksheet.control_k49.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l49; assert_equal("Apmēram 80-100% no apkures iekārtām izmanto elektroenerģiju.", worksheet.control_l49.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i50; assert_equal("Dominējošais apkures veids ir katli vai CHP ar gāzes izmantošanu (dabasgāze un biometāns).", worksheet.control_i50.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j50; assert_equal("Dominējošais apkures veids ir katli ar cietās biomasas izmantošanu.", worksheet.control_j50.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k50; assert_equal("Dominējošais apkures veids ir siltumenerģijas piegāde no CSAS.", worksheet.control_k50.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l50; assert_equal("Dažādi apkures veidi: katli ar gāzes, cietās biomasas izmantošanu un CSAS.", worksheet.control_l50.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_i52; assert_equal("2060.g. enerģijas patēriņš ir par 17% lielāks nekā 2018.g.", worksheet.control_i52.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_j52; assert_equal("2060.g. enerģijas patēriņš ir par 10% lielāks nekā 2018.g.", worksheet.control_j52.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_k52; assert_equal("2060.g. enerģijas patēriņš ir par 5% lielāks nekā 2018.g.", worksheet.control_k52.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_l52; assert_equal("2060.g. enerģijas patēriņš ir par 30% mazāks nekā 2018.g.", worksheet.control_l52.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_i53; assert_equal("2060.g. sadalījums starp dabasgāzi un elektroenerģiju tāds pats kā 2018.g.", worksheet.control_i53.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j53; assert_equal("2060.g. tikai ierīces ar elektroenerģijas patēriņu", worksheet.control_j53.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k53; assert_equal("Tāds pats kā B", worksheet.control_k53.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l53; assert_equal("Tāds pats kā B", worksheet.control_l53.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i55; assert_equal("Nenotiek oglekļa sekvestrēšana", worksheet.control_i55.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j55; assert_equal("Uz 2060.gadu vidēji sekvestē apmēram 0,022 Mt CO2/gadā", worksheet.control_j55.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k55; assert_equal("Uz 2060.gadu vidēji sekvestē apmēram 0,68 Mt CO2/gadā", worksheet.control_k55.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l55; assert_equal("Uz 2060.gadu vidēji sekvestē apmēram 2,2 Mt CO2/gadā", worksheet.control_l55.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i56; assert_equal("Uzkrāšanas iekārtu jauda 2018.gada līmenī", worksheet.control_i56.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j56; assert_equal("Uzkrāšanas iekārtu jauda sasniedz 65 MW", worksheet.control_j56.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k56; assert_equal("Uzkrāšanas iekārtu jauda sasniedz 870 MW", worksheet.control_k56.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_l56; assert_equal("Uzkrāšanas iekārtu jauda sasniedz 2900 MW", worksheet.control_l56.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_i57; assert_equal("Vidējais ražošanas variants", worksheet.control_i57.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_j57; assert_equal("Zems ražošanas variants", worksheet.control_j57.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_k57; assert_equal("Ļoti zems ražošanas variants", worksheet.control_k57.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j53; assert_equal("2060.g. tikai ierīces ar elektroenerģijas patēriņu.", worksheet.control_j53.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k53; assert_equal("Tāds pats kā B.", worksheet.control_k53.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l53; assert_equal("Tāds pats kā B.", worksheet.control_l53.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i55; assert_equal("Nenotiek oglekļa sekvestrēšana.", worksheet.control_i55.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j55; assert_equal("Uz 2060.gadu vidēji sekvestrē apmēram 0,022 Mt CO2/gadā.", worksheet.control_j55.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k55; assert_equal("Uz 2060.gadu vidēji sekvestrē apmēram 0,68 Mt CO2/gadā.", worksheet.control_k55.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l55; assert_equal("Uz 2060.gadu vidēji sekvestrē apmēram 2,2 Mt CO2/gadā.", worksheet.control_l55.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i56; assert_equal("Uzkrāšanas iekārtu jauda 2018.gada līmenī.", worksheet.control_i56.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j56; assert_equal("Uzkrāšanas iekārtu jauda sasniedz 65 MW.", worksheet.control_j56.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k56; assert_equal("Uzkrāšanas iekārtu jauda sasniedz 870 MW.", worksheet.control_k56.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_l56; assert_equal("Uzkrāšanas iekārtu jauda sasniedz 2900 MW.", worksheet.control_l56.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_i57; assert_equal("Vidējs ražošanas variants.", worksheet.control_i57.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_j57; assert_equal("Zems ražošanas variants.", worksheet.control_j57.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_k57; assert_equal("Ļoti zems ražošanas variants.", worksheet.control_k57.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_n4; assert_equal("Doesn't tackle climate change (All at level 1)", worksheet.control_n4.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_o4; assert_equal("Maximum demand, no supply", worksheet.control_o4.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_p4; assert_equal("Maximum supply, no demand", worksheet.control_p4.to_s.gsub(/[\n\r]+/,'')); end
@@ -1088,10 +1088,10 @@ class TestModel < Minitest::Unit::TestCase
   def test_control_bs56; assert_equal("20 GW of pumped storage with large lagoons, 30 GW of interconnection with Europe and substantial demand shifting available for balancing electricity supply and demand", worksheet.control_bs56.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d5; assert_equal("Nuclear power stations", worksheet.control_d5.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d6; assert_equal("Oglekļa uztveršana un glabāšana (CCS)", worksheet.control_d6.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_d7; assert_equal("elektrostacijas ar CCS", worksheet.control_d7.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_d7; assert_equal("Elektrostacijas ar CCS", worksheet.control_d7.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d8; assert_equal("Kurināmā izvēle CCS stacijās ", worksheet.control_d8.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d9; assert_equal("Atkrastes vēja stacijas", worksheet.control_d9.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_d10; assert_equal("sauszemes vēja stacijas", worksheet.control_d10.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_d10; assert_equal("Sauszemes vēja stacijas", worksheet.control_d10.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d11; assert_equal("Wave", worksheet.control_d11.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d12; assert_equal("Tidal Stream", worksheet.control_d12.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d13; assert_equal("Tidal Range", worksheet.control_d13.to_s.gsub(/[\n\r]+/,'')); end
@@ -1100,7 +1100,7 @@ class TestModel < Minitest::Unit::TestCase
   def test_control_d16; assert_equal("Saules paneļi siltumenerģijas ražošanai", worksheet.control_d16.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d17; assert_equal("Geothermal electricity", worksheet.control_d17.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d18; assert_equal("Hidroelektrostacijas", worksheet.control_d18.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_d19; assert_equal("mazas jaudas vēja stacijas", worksheet.control_d19.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_d19; assert_equal("Mazas jaudas vēja stacijas", worksheet.control_d19.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d20; assert_equal("Elektroenerģijas imports", worksheet.control_d20.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d21; assert_equal("Lauksaimniecība un zemes izmantošana", worksheet.control_d21.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d22; assert_equal(" Bioenerģijai atvēlētās zemes platības", worksheet.control_d22.to_s.gsub(/[\n\r]+/,'')); end
@@ -1127,14 +1127,14 @@ class TestModel < Minitest::Unit::TestCase
   def test_control_d44; assert_equal("Rūpniecība", worksheet.control_d44.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d45; assert_equal("Ražošanas izaugsme rūpniecībā", worksheet.control_d45.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d46; assert_equal("Energointensitāte rūpniecībā", worksheet.control_d46.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_d47; assert_equal("Apkure un dzesēšana komersektorā", worksheet.control_d47.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_d47; assert_equal("Apkure un dzesēšana komercsektorā", worksheet.control_d47.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d48; assert_equal("Apkures un dzesēšanas patēriņš komercsektorā", worksheet.control_d48.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d49; assert_equal("Apkures elektrifikācija komercsektorā", worksheet.control_d49.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d50; assert_equal("Pārējās apkures sistēmas komercsektorā", worksheet.control_d50.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d51; assert_equal("Apgaismojums un ierīces", worksheet.control_d51.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d52; assert_equal("Apgaismojums un ierīces komercsektorā", worksheet.control_d52.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d53; assert_equal("Komerciālā sektora ēdienu gatavošanas iekārtu elektrifikācija", worksheet.control_d53.to_s.gsub(/[\n\r]+/,'')); end
-  def test_control_d55; assert_equal("oglekļa sekvestrēšana", worksheet.control_d55.to_s.gsub(/[\n\r]+/,'')); end
+  def test_control_d55; assert_equal("Oglekļa sekvestrēšana", worksheet.control_d55.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d56; assert_equal("Uzkrāšana, patēriņa pāslēgšana un savienojumi", worksheet.control_d56.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_d57; assert_equal("Vietējā fosilā kurināmā ražošana", worksheet.control_d57.to_s.gsub(/[\n\r]+/,'')); end
   def test_control_g6; assert_equal("2.pdf", worksheet.control_g6.to_s.gsub(/[\n\r]+/,'')); end
