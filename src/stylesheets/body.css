@@ -498,7 +498,8 @@ body .block-wrapper .block-container .project-purpose {
 .modal-calculator-scenarious-mask,
 .modal-calculator-structure-mask,
 .modal-about-mask,
-.modal-goals-mask{
+.modal-goals-mask,
+.modal-tablet-mask {
   position: fixed;
     z-index: 999;
     top: 0;
