@@ -487,20 +487,18 @@ body .block-wrapper .block-container .project-purpose {
   justify-content: space-between;
 }
 
-.modal-sections-wrapper,
+/* .modal-sections-wrapper,
 .modal-tablet-wrapper {
   position: absolute;
   top: 50%;
   left: 20%;
   transform: translate(-12%, -50%);
-}
+} */
 
 .modal-calculator-scenarious-mask,
 .modal-calculator-structure-mask,
 .modal-about-mask,
-.modal-goals-mask,
-.modal-tablet-mask,
-.modal-tablet-mask {
+.modal-goals-mask{
   position: fixed;
     z-index: 999;
     top: 0;
@@ -531,23 +529,16 @@ body .block-wrapper .block-container .project-purpose {
 .modal-calculator-structure-mask.modal-calculator-structure .content-container,
 .modal-calculator-scenarious-mask.modal-calculator-scenarious .content-container,
 .modal-about-mask.modal-project-about .content-container,
-.modal-goals-mask.modal-project-goals .content-container {
-  width: 90%;
-  background: #fff;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 4px;
-  margin-top: 10%;
-}
-
+.modal-goals-mask.modal-project-goals .content-container,
 .modal-tablet-mask.tablet-about .modal-tablet-wrapper,
-.modal-tablet-mask.tablet-howto .modal-tablet-wrapper{
+.modal-tablet-mask.tablet-howto .modal-tablet-wrapper {
   width: 90%;
   background: #fff;
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
-  margin-top: 10%;
+  margin-top: 5%;
+  box-sizing: border-box;
 }
 
 .modal-sections-mask.modal-sectors,
@@ -583,7 +574,9 @@ body .block-wrapper .block-container .project-purpose {
 .modal-calculator-structure-mask.modal-calculator-structure .content-blocks .content-block__text-container,
 .modal-calculator-scenarious-mask.modal-calculator-scenarious .content-blocks .content-block__text-container,
 .modal-about-mask.modal-project-about .content-blocks .content-block__text-container,
-.modal-goals-mask.modal-project-goals .content-blocks .content-block__text-container {
+.modal-goals-mask.modal-project-goals .content-blocks .content-block__text-container,
+.modal-tablet-mask.tablet-about .modal-tablet-wrapper,
+.modal-tablet-mask.tablet-howto .modal-tablet-wrapper {
   /* height: 100%; */
   padding: 20px;
 }
@@ -592,7 +585,9 @@ body .block-wrapper .block-container .project-purpose {
 .modal-calculator-structure-mask.modal-calculator-structure .content-blocks .content-block__text-container p,
 .modal-calculator-scenarious-mask.modal-calculator-scenarious .content-blocks .content-block__text-container p,
 .modal-about-mask.modal-project-about .content-blocks .content-block__text-container p,
-.modal-goals-mask.modal-project-goals  .content-blocks .content-block__text-container p {
+.modal-goals-mask.modal-project-goals  .content-blocks .content-block__text-container p,
+.modal-tablet-mask.tablet-about .modal-tablet-wrapper .content-block__text-container p,
+.modal-tablet-mask.tablet-howto .modal-tablet-wrapper .content-block__text-container p {
   font-family: "Rubik";
     font-style: normal;
     font-weight: 400;
@@ -606,7 +601,10 @@ body .block-wrapper .block-container .project-purpose {
 .modal-calculator-structure-mask.modal-calculator-structure .content-block__text-container h1,
 .modal-calculator-scenarious-mask.modal-calculator-scenarious  .content-block__text-container h1,
 .modal-about-mask.modal-project-about .content-block__text-container h1,
-.modal-goals-mask.modal-project-goals  .content-block__text-container h1 {
+.modal-goals-mask.modal-project-goals  .content-block__text-container h1,
+.modal-tablet-mask.tablet-about .modal-tablet-wrapper .content-block__text-container h1,
+.modal-tablet-mask.tablet-howto .modal-tablet-wrapper .content-block__text-container h1
+ {
   font-weight: 500;
   font-size: 18px;
   color: #646569;
@@ -616,7 +614,9 @@ body .block-wrapper .block-container .project-purpose {
 .modal-calculator-structure-mask.modal-calculator-structure .content-block__text-container h2,
 .modal-calculator-scenarious-mask.modal-calculator-scenarious .content-block__text-container h2,
 .modal-about-mask.modal-project-about .content-block__text-container h2,
-.modal-goals-mask.modal-project-goals  .content-block__text-container h2 {
+.modal-goals-mask.modal-project-goals  .content-block__text-container h2,
+.modal-tablet-mask.tablet-about .modal-tablet-wrapper .content-block__text-container h2,
+.modal-tablet-mask.tablet-howto .modal-tablet-wrapper .content-block__text-container h2 {
   font-weight: 500;
   margin-bottom: 0;
   border-bottom: solid 4px #EBF3FF;
