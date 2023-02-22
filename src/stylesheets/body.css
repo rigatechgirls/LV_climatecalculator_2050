@@ -617,6 +617,24 @@ body .block-wrapper .block-container .project-purpose {
 .modal-sections-mask .content-container.sections .content-blocks .content-block {
   display: flex;
 }
+
+.modal-sections-mask .content-container.sections .content-blocks .content-block h2 {
+  width: 60%;
+  font-weight: 500;
+  margin-bottom: 0;
+  border-bottom: solid 4px #EBF3FF;
+}
+
+.modal-sections-mask .content-container.sections .content-blocks .content-block p {
+  font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.04em;
+    color: #49494D;
+}
+
 @media screen and (min-width: 834px) {
   .modal-about-mask.modal-about-project,
   .modal-how-to-use-mask.modal-how-to-use,
