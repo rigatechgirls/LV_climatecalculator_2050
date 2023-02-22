@@ -537,6 +537,16 @@ body .block-wrapper .block-container .project-purpose {
   margin-top: 10%;
 }
 
+.modal-tablet-mask.tablet-about .modal-tablet-wrapper,
+.modal-tablet-mask.tablet-howto .modal-tablet-wrapper{
+  width: 90%;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  margin-top: 10%;
+}
+
 .modal-sections-mask.modal-sectors,
 .modal-sections-mask.modal-ambitions {
   display: none;
@@ -553,7 +563,9 @@ body .block-wrapper .block-container .project-purpose {
   .modal-calculator-structure-mask.modal-calculator-structure,
   .modal-calculator-scenarious-mask.modal-calculator-scenarious,
   .modal-about-mask.modal-project-about,
-  .modal-goals-mask.modal-project-goals {
+  .modal-goals-mask.modal-project-goals,
+  .modal-sections-mask.modal-sectors,
+  .modal-sections-mask.modal-ambitions {
     display: none !important;
   }
 }
