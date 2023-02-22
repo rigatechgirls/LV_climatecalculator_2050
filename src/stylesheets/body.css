@@ -643,8 +643,7 @@ body .block-wrapper .block-container .project-purpose {
 }
 
 
-.container__tab-mobile .tab-links .tab-link-item,
-.modal-tablet-wrapper .tab-container .tab-links .tab-link-item {
+.container__tab-mobile .tab-links .tab-link-item {
   text-decoration: none;
   font-family: "Rubik";
   font-style: normal;
@@ -671,4 +670,50 @@ body .block-wrapper .block-container .project-purpose {
 .modal-tablet-wrapper .calc-structure,
 .modal-tablet-wrapper .scenarious {
   display: none;
+}
+
+.modal-tablet-block {
+  max-width: 727px;
+  padding: 35px 40px 60px 34px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  padding: 26px 46px 60px 46px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.modal-tablet-wrapper .tab-container .tab-links {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 1px #F1F1F1;
+}
+
+.modal-tablet-wrapper .tab-container .tab-links .tab-link-item {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #49494D;
+  text-decoration: none;
+  padding: 6px 23.2px;
+  margin-right: 4px;
+  border: solid 1px #F1F1F1;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  width: 150px;
+  box-sizing: border-box;
+}
+
+.modal-tablet-wrapper .tab-container .tab-links .tab-link-item..router-link-exact-active {
+  background: #EBF3FF;
 }
