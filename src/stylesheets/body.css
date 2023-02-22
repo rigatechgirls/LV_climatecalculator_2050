@@ -487,7 +487,8 @@ body .block-wrapper .block-container .project-purpose {
   justify-content: space-between;
 }
 
-.modal-sections-wrapper {
+.modal-sections-wrapper,
+.modal-tablet-wrapper {
   position: absolute;
   top: 50%;
   left: 20%;
@@ -497,7 +498,9 @@ body .block-wrapper .block-container .project-purpose {
 .modal-calculator-scenarious-mask,
 .modal-calculator-structure-mask,
 .modal-about-mask,
-.modal-goals-mask {
+.modal-goals-mask,
+.modal-tablet-mask,
+.modal-tablet-mask {
   position: fixed;
     z-index: 999;
     top: 0;
@@ -556,14 +559,19 @@ body .block-wrapper .block-container .project-purpose {
 .modal-sections-mask.modal-ambitions .mobile-title {
   width: 100%;
 }
-
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 834px) {
   .modal-about-mask.modal-about-project,
   .modal-how-to-use-mask.modal-how-to-use,
   .modal-calculator-structure-mask.modal-calculator-structure,
   .modal-calculator-scenarious-mask.modal-calculator-scenarious,
   .modal-about-mask.modal-project-about,
-  .modal-goals-mask.modal-project-goals,
+  .modal-goals-mask.modal-project-goals {
+    display: none !important;
+  }
+
+}
+
+@media screen and (max-width: 834px) and (min-width: 1281px) {
   .modal-sections-mask.modal-sectors,
   .modal-sections-mask.modal-ambitions {
     display: none !important;
