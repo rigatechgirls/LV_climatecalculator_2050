@@ -608,6 +608,20 @@ body .block-wrapper .block-container .project-purpose {
     color: #49494D;
 }
 
+.content-blocks.project-purpose {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.modal-about-mask.modal-project-about .content-block__img-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 33px;
+  margin-bottom: 46px;
+}
+
 .modal-how-to-use-mask.modal-how-to-use .content-blocks .content-block__text-container h1,
 .modal-calculator-structure-mask.modal-calculator-structure .content-block__text-container h1,
 .modal-calculator-scenarious-mask.modal-calculator-scenarious  .content-block__text-container h1,
@@ -685,6 +699,14 @@ body .block-wrapper .block-container .project-purpose {
   cursor: pointer;
   display: block;
     text-align: right;
+}
+
+.content-block__img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 33px;
+  margin-bottom: 46px;
 }
 
 .content-block__img-container img {
