@@ -1471,7 +1471,7 @@ nav.navigation-modal-windows {
   flex-direction: column;
 }
 .project-purpose .content-blocks:first-child {
-  flex-direction: row !important;
+  flex-direction: row;
 }
 .project-purpose .content-blocks:first-child .content-block__text-container p, .project-purpose .content-blocks:first-child .content-block__text-container ul {
   width: 80%;

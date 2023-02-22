@@ -614,12 +614,17 @@ body .block-wrapper .block-container .project-purpose {
   flex-direction: column;
 }
 
-.modal-about-mask.modal-project-about .content-block__img-container{
+.modal-about-mask.modal-project-about .content-block__img-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 33px;
   margin-bottom: 46px;
+}
+
+.modal-about-mask.modal-project-about .content-block__img-container img {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .modal-how-to-use-mask.modal-how-to-use .content-blocks .content-block__text-container h1,
