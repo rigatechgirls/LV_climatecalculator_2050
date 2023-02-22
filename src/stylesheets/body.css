@@ -613,6 +613,10 @@ body .block-wrapper .block-container .project-purpose {
 .modal-tablet-wrapper  .mobile-title{
   width: 100%;
 }
+
+.modal-sections-mask .content-container.sections .content-blocks .content-block {
+  display: flex;
+}
 @media screen and (min-width: 834px) {
   .modal-about-mask.modal-about-project,
   .modal-how-to-use-mask.modal-how-to-use,
