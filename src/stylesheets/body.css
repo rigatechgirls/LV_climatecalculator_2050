@@ -530,9 +530,7 @@ body .block-wrapper .block-container .project-purpose {
 .modal-calculator-structure-mask.modal-calculator-structure .content-container,
 .modal-calculator-scenarious-mask.modal-calculator-scenarious .content-container,
 .modal-about-mask.modal-project-about .content-container,
-.modal-goals-mask.modal-project-goals .content-container,
-.modal-tablet-mask.tablet-about .modal-tablet-wrapper,
-.modal-tablet-mask.tablet-howto .modal-tablet-wrapper {
+.modal-goals-mask.modal-project-goals .content-container{
   width: 90%;
   background: #fff;
   margin-left: auto;
@@ -542,13 +540,26 @@ body .block-wrapper .block-container .project-purpose {
   box-sizing: border-box;
 }
 
+.modal-tablet-mask.tablet-about .modal-tablet-wrapper,
+.modal-tablet-mask.tablet-howto .modal-tablet-wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  margin-top: 5%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
 .modal-sections-mask.modal-sectors,
 .modal-sections-mask.modal-ambitions {
   display: none;
 }
 
 .modal-sections-mask.modal-sectors .mobile-title,
-.modal-sections-mask.modal-ambitions .mobile-title {
+.modal-sections-mask.modal-ambitions .mobile-title,
+.modal-tablet-wrapper  .mobile-title{
   width: 100%;
 }
 @media screen and (min-width: 834px) {
@@ -564,8 +575,8 @@ body .block-wrapper .block-container .project-purpose {
 }
 
 @media screen and (max-width: 834px) and (min-width: 1281px) {
-  .modal-sections-mask.modal-sectors,
-  .modal-sections-mask.modal-ambitions {
+  .modal-tablet-mask.tablet-about,
+  .modal-tablet-mask.tablet-howto {
     display: none !important;
   }
 }
