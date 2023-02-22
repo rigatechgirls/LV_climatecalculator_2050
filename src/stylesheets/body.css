@@ -491,6 +491,10 @@ body .block-wrapper .block-container .project-purpose {
   justify-content: space-between;
 }
 
+.modal-tablet-block .mobile-title {
+  justify-content: flex-end;
+}
+
 .mobile-title h3 {
   font-family: "Rubik";
   font-style: normal;
@@ -839,3 +843,32 @@ body .block-wrapper .block-container .project-purpose {
     display: none !important;
   }
 }
+
+ol.list-tablet {
+  display: block;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 60px;
+  -moz-column-count: 2;
+  -moz-column-gap: 60px;
+  column-count: 2;
+  column-gap: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+
+ol.list-tablet li {
+  font-size: 12px!important;
+  line-height: 14px!important;
+  letter-spacing: -0.03em!important;
+}
+ol.list-tablet li:nth-child( n + 5 ) {
+      float: left;
+      margin-right: 8px;
+      padding-right: 8px;
+  }
+  ol.list-tablet li:nth-child( n + 7 ) {
+      float: inherit;
+      margin-right: 0;
+      padding-right: 0;
+  }
