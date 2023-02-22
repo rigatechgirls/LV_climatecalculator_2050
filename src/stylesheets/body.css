@@ -463,6 +463,10 @@ body .block-wrapper .block-container .project-purpose {
   display: none;
 }
 
+.modal-calculator-structure-mask .calc-structure {
+  padding: 0 20px;
+}
+
 .page-links .modal-mask.nav-sidebar {
   display: none;
 }
@@ -538,6 +542,7 @@ body .block-wrapper .block-container .project-purpose {
   border-radius: 4px;
   margin-top: 5%;
   box-sizing: border-box;
+  max-width: 420px;
 }
 
 .modal-tablet-mask.tablet-about .modal-tablet-wrapper,
@@ -650,6 +655,21 @@ body .block-wrapper .block-container .project-purpose {
   border-bottom: solid 4px #EBF3FF;
   color: #646569;
   font-size: 13px;
+}
+
+.modal-how-to-use-mask.modal-how-to-use .content-blocks .content-block__text-container h3,
+.modal-calculator-structure-mask.modal-calculator-structure .content-block__text-container h3,
+.modal-calculator-scenarious-mask.modal-calculator-scenarious .content-block__text-container h3,
+.modal-about-mask.modal-project-about .content-block__text-container h3,
+.modal-goals-mask.modal-project-goals  .content-block__text-container h3 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.04em;
+  color: #646569;
+  text-align: left;
 }
 
 
