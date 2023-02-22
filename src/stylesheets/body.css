@@ -643,7 +643,8 @@ body .block-wrapper .block-container .project-purpose {
 }
 
 
-.container__tab-mobile .tab-links .tab-link-item {
+.container__tab-mobile .tab-links .tab-link-item,
+.modal-tablet-wrapper .tab-container .tab-links .tab-link-item {
   text-decoration: none;
   font-family: "Rubik";
   font-style: normal;
@@ -663,4 +664,11 @@ body .block-wrapper .block-container .project-purpose {
 
 .scenarious .content-block__img-container img {
   width: unset;
+}
+
+/* tablet */
+.modal-tablet-wrapper .project-purpose,
+.modal-tablet-wrapper .calc-structure,
+.modal-tablet-wrapper .scenarious {
+  display: none;
 }
