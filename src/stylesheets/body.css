@@ -640,7 +640,7 @@ body .block-wrapper .block-container .project-purpose {
 
 .scenarious .content-block__img-container img {
   margin-left: 0;
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 
 .modal-how-to-use-mask.modal-how-to-use .content-blocks .content-block__text-container h1,
@@ -750,7 +750,7 @@ body .block-wrapper .block-container .project-purpose {
 }
 
 .content-block__img-container img {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .scenarious .content-block__img-container img {
