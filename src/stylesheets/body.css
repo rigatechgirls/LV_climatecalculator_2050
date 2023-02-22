@@ -491,6 +491,17 @@ body .block-wrapper .block-container .project-purpose {
   justify-content: space-between;
 }
 
+.mobile-title h3 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.04em;
+  color: #646569;
+  text-align: left;
+}
+
 /* .modal-sections-wrapper,
 .modal-tablet-wrapper {
   position: absolute;
@@ -627,7 +638,7 @@ body .block-wrapper .block-container .project-purpose {
   margin-bottom: 46px;
 }
 
-.modal-about-mask.modal-project-about .content-block__img-container img {
+.scenarious .content-block__img-container img {
   margin-left: 0;
   margin-right: 0;
 }
@@ -687,11 +698,15 @@ body .block-wrapper .block-container .project-purpose {
   color: #49494D;
 }
 
-.content-container.project-purpose .content-blocks,
 .modal-tablet-wrapper .content-blocks {
   padding: 34px 0 60px 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
+}
+
+.content-container.project-purpose .content-blocks {
+  display: flex;
+  flex-direction: column !important;
 }
 
 .info-box {
