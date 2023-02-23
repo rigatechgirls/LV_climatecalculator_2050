@@ -100,9 +100,15 @@
     <!-- Modal ambitions -->
     <%= ERB.new(File.read('parts/modal-ambitions.html.erb'), nil, nil, '_sub01').result(binding) %>
 
+    <!-- Tablet how to use -->
+    <%= ERB.new(File.read('parts/modal-tablet-howto.html.erb'), nil, nil, '_sub01').result(binding) %>
+
+    <!-- Tablet about -->
+    <%= ERB.new(File.read('parts/modal-tablet-about.html.erb'), nil, nil, '_sub01').result(binding) %>
+
     <!-- This appears while the tool is waiting for data from the server -->
     <div id='calculating'>
-      <span>Calculating</span>
+      <span></span>
     </div>
 
     <!-- This is needed to show the tooltips, don't remove -->
