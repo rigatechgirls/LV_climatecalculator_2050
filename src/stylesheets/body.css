@@ -624,7 +624,7 @@ body .block-wrapper .block-container .project-purpose {
 .modal-ambitions .modal-sections-wrapper {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
+  /* margin-top: 5%; */
 }
 
 .modal-ambitions li {
@@ -649,12 +649,12 @@ body .block-wrapper .block-container .project-purpose {
 }
 
 .modal-sections-mask .content-container.steps .content-blocks .content-block:last-child  {
-  margin-top: 30px;
+  margin-top: 0;
   flex-direction: column;
 }
 
 .modal-sections-mask .content-container.steps .content-blocks .content-block:last-child .content-block__text-container:last-child {
-  margin-top: 0;
+  margin-top: 40px;
   border-top: solid 1px #D9D9D9;
 }
 
