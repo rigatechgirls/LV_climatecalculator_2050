@@ -614,27 +614,32 @@ body .block-wrapper .block-container .project-purpose {
   width: 100%;
 }
 
-.modal-sectors .modal-content {
+.modal-sectors .modal-content,
+.modal-ambitions .modal-content {
   padding: 0 !important;
   box-shadow: unset !important;
 }
 
-.modal-sectors .modal-sections-wrapper {
+.modal-sectors .modal-sections-wrapper,
+.modal-ambitions .modal-sections-wrapper {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
 }
 
-.modal-sections-mask .content-container.sections .content-blocks .content-block {
+.modal-sections-mask .content-container.sections .content-blocks .content-block,
+.modal-sections-mask .content-container.steps .content-blocks .content-block {
   display: flex;
 }
 
-.modal-sections-mask .content-container.sections .content-blocks .content-block:last-child {
+.modal-sections-mask .content-container.sections .content-blocks .content-block:last-child,
+.modal-sections-mask .content-container.steps .content-blocks .content-block:last-child  {
   margin-top: 90px;
   border-top: solid 1px #D9D9D9;
 }
 
-.modal-sections-mask .content-container.sections .content-blocks .content-block:last-child li {
+.modal-sections-mask .content-container.sections .content-blocks .content-block:last-child li,
+.modal-sections-mask .content-container.steps .content-blocks .content-block:last-child li {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
@@ -644,7 +649,8 @@ body .block-wrapper .block-container .project-purpose {
   color: #49494D;
 }
 
-.modal-sections-mask .content-container.sections .content-blocks .content-block h2 {
+.modal-sections-mask .content-container.sections .content-blocks .content-block h2,
+.modal-sections-mask .content-container.steps .content-blocks .content-block h2  {
   font-family: "Rubik";
     font-style: normal;
     font-size: 13px;
@@ -657,7 +663,8 @@ body .block-wrapper .block-container .project-purpose {
   border-bottom: solid 4px #EBF3FF;
 }
 
-.modal-sections-mask .content-container.sections .content-blocks .content-block p {
+.modal-sections-mask .content-container.sections .content-blocks .content-block p,
+.modal-sections-mask .content-container.steps .content-blocks .content-block p {
   font-family: "Rubik";
     font-style: normal;
     font-weight: 400;
