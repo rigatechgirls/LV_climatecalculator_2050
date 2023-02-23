@@ -20,7 +20,8 @@ body {
   z-index: 99; }
   #calculating span {
     padding: 3px;
-    background-color: yellow; }
+    /* background-color: yellow;  */
+  }
 
 #results {
   overflow: hidden;
