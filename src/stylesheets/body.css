@@ -151,8 +151,8 @@ body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
   display: none;
 }
 
-.calculator-wrapper .calculator-blocks .calculator-inputs {
-  max-width: 400;
+body .calculator-wrapper .calculator-blocks .calculator-inputs {
+  max-width: 400px;
 }
 
 /*  mobile */
