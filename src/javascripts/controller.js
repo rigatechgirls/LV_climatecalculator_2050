@@ -541,23 +541,45 @@
   check_level_buttons = function(main_code) {
     const codeArray = [...main_code];
     console.log("codeArray", codeArray);
+    const transport = codeArray.slice(25, 31);
+    const household = codeArray.slice(32, 39);
+    const commerce = codeArray.slice(40, 49);
+    const bioenergy = codeArray.slice(17, 23);
+    const energyprod = codeArray.slice(2, 16);
     // compare transport path of main_code
     // to see if particular level should be set
     // 11111111111111111111111112222221111111111111111111111
-    const transport = codeArray.slice(25, 6);
+    // 11111111111111111111111111111111444414411111111111111
+    // 11111111111111111111111111111111111111112212221221111
+    // 11111111111111111333333111111111111111111111111111111
+    // 11333311133311331111111111111111111111111111111111111
     console.log("transport", transport);
     if (transport.join('') === '111111') {
       console.log("transport to 1");
+      setCategoryButtonsToLevel(1, '.lever-step-transport');
     } else if (transport.join('') === '222222') {
       console.log("transport to 2");
+      setCategoryButtonsToLevel(2, '.lever-step-transport');
     } else if (transport.join('') === '333333') {
       console.log("transport to 3");
+      setCategoryButtonsToLevel(3, '.lever-step-transport');
     } else if (transport.join('') === '444444') {
       console.log("transport to 4");
+      setCategoryButtonsToLevel(4, '.lever-step-transport');
     } else {
       console.log("transport to 0");
+      setCategoryButtonsToLevel(0, '.lever-step-transport');
     }
 
+  }
+
+  setCategoryButtonsToLevel = function(level, category) {
+    if (level !== 0) {
+      $(category).removeClass("active");
+      $(category).filter(function(){ return $(this).data().choicelevel <= level}).addClass("active");
+    } else {
+      $(category).removeClass("active");
+    }
   }
 
   float_to_letter_map = {
