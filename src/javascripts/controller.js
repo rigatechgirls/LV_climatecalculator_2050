@@ -540,6 +540,7 @@
 
   check_level_buttons = function(main_code) {
     const codeArray = [...main_code];
+    console.log("codeArray", codeArray);
     // compare transport path of main_code
     // to see if particular level should be set
     // 11111111111111111111111112222221111111111111111111111
