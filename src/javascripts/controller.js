@@ -535,7 +535,7 @@
 
   selectLevelsButton = function(level) {
     $('.lever-step').removeClass("active");
-    $('.lever-step').filter(function(){ return $(this).data().choicelevel === level}).addClass("active");
+    $('.lever-step').filter(function(){ return $(this).data().choicelevel <= level}).addClass("active");
   }
 
   float_to_letter_map = {
