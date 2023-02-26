@@ -535,7 +535,92 @@
 
   selectLevelsButton = function(level) {
     $('.lever-step').removeClass("active");
-    $('.lever-step').filter(function(){ return $(this).data().choicelevel === level}).addClass("active");
+    $('.lever-step').filter(function(){ return $(this).data().choicelevel <= level}).addClass("active");
+  }
+
+  check_level_buttons = function(main_code) {
+    const codeArray = [...main_code];
+    const transport = codeArray.slice(25, 31);
+    const household = codeArray.slice(32, 39);
+    const commerce = codeArray.slice(40, 49);
+    const bioenergy = codeArray.slice(17, 23);
+    const energyprod = codeArray.slice(2, 16);
+    // compare transport path of main_code
+    // to see if particular level should be set
+    // 11111111111111111111111112222221111111111111111111111
+    // 11111111111111111111111111111111444414411111111111111
+    // 11111111111111111111111111111111111111112212221221111
+    // 11111111111111111333333111111111111111111111111111111
+    // 11333311133311331111111111111111111111111111111111111
+    if (transport.join('') === '111111') {
+      setCategoryButtonsToLevel(1, '.lever-step-transport');
+    } else if (transport.join('') === '222222') {
+      setCategoryButtonsToLevel(2, '.lever-step-transport');
+    } else if (transport.join('') === '333333') {
+      setCategoryButtonsToLevel(3, '.lever-step-transport');
+    } else if (transport.join('') === '444444') {
+      setCategoryButtonsToLevel(4, '.lever-step-transport');
+    } else {
+      setCategoryButtonsToLevel(0, '.lever-step-transport');
+    }
+
+    if (household.join('') === '1111111') {
+      setCategoryButtonsToLevel(1, '.lever-step-household');
+    } else if (household.join('') === '2222122') {
+      setCategoryButtonsToLevel(2, '.lever-step-household');
+    } else if (household.join('') === '3333133') {
+      setCategoryButtonsToLevel(3, '.lever-step-household');
+    } else if (household.join('') === '4444144') {
+      setCategoryButtonsToLevel(4, '.lever-step-household');
+    } else {
+      setCategoryButtonsToLevel(0, '.lever-step-household');
+    }
+
+    if (commerce.join('') === '111111111') {
+      setCategoryButtonsToLevel(1, '.lever-step-commerce');
+    } else if (commerce.join('') === '221222122') {
+      setCategoryButtonsToLevel(2, '.lever-step-commerce');
+    } else if (commerce.join('') === '331333133') {
+      setCategoryButtonsToLevel(3, '.lever-step-commerce');
+    } else if (commerce.join('') === '441444144') {
+      setCategoryButtonsToLevel(4, '.lever-step-commerce');
+    } else {
+      setCategoryButtonsToLevel(0, '.lever-step-commerce');
+    }
+
+    if (bioenergy.join('') === '111111') {
+      setCategoryButtonsToLevel(1, '.lever-step-bioenergy');
+    } else if (bioenergy.join('') === '222222') {
+      setCategoryButtonsToLevel(2, '.lever-step-bioenergy');
+    } else if (bioenergy.join('') === '333333') {
+      setCategoryButtonsToLevel(3, '.lever-step-bioenergy');
+    } else if (bioenergy.join('') === '444444') {
+      setCategoryButtonsToLevel(4, '.lever-step-bioenergy');
+    } else {
+      setCategoryButtonsToLevel(0, '.lever-step-bioenergy');
+    }
+
+    if (energyprod.join('') === '11111111111111') {
+      setCategoryButtonsToLevel(1, '.lever-step-energy-prod');
+    } else if (energyprod.join('') === '22221112221122') {
+      setCategoryButtonsToLevel(2, '.lever-step-energy-prod');
+    } else if (energyprod.join('') === '33331113331133') {
+      setCategoryButtonsToLevel(3, '.lever-step-energy-prod');
+    } else if (energyprod.join('') === '44441114441144') {
+      setCategoryButtonsToLevel(4, '.lever-step-energy-prod');
+    } else {
+      setCategoryButtonsToLevel(0, '.lever-step-energy-prod');
+    }
+
+  }
+
+  setCategoryButtonsToLevel = function(level, category) {
+    if (level !== 0) {
+      $(category).removeClass("active");
+      $(category).filter(function(){ return $(this).data().choicelevel <= level}).addClass("active");
+    } else {
+      $(category).removeClass("active");
+    }
   }
 
   float_to_letter_map = {
@@ -755,6 +840,7 @@
     }
     updateControls(old_choices, choices);
     main_code = codeForChoices();
+    check_level_buttons(main_code);
     if (history['pushState'] != null) {
       history.pushState(choices, main_code, url());
     }

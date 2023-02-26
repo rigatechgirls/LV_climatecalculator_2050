@@ -150,6 +150,11 @@ body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
 .calculator-wrapper .calculator-blocks .calculator-inputs .levers-container .levers-table .levers .levers-sector-container div.levers-subsector-container {
   display: none;
 }
+
+body .calculator-wrapper .calculator-blocks .calculator-inputs {
+  max-width: 400px;
+}
+
 /*  mobile */
 .calculator-wrapper .calculator-blocks .calculator-inputs.open {
   display: flex;
@@ -180,6 +185,10 @@ body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
  body .calculator-wrapper .calculator-blocks {
     padding: 0;
   }
+}
+
+.header-wrapper .header-block {
+  box-sizing: border-box;
 }
 
 .header-wrapper .header-block .page-links nav.navigation-desktop a.page-link-item.active-tab {
