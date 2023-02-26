@@ -755,6 +755,7 @@
     }
     updateControls(old_choices, choices);
     main_code = codeForChoices();
+    console.log("main_code", main_code);
     if (history['pushState'] != null) {
       history.pushState(choices, main_code, url());
     }
