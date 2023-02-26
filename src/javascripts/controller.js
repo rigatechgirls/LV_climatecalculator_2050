@@ -553,22 +553,88 @@
     // 11111111111111111111111111111111111111112212221221111
     // 11111111111111111333333111111111111111111111111111111
     // 11333311133311331111111111111111111111111111111111111
-    console.log("transport", transport);
     if (transport.join('') === '111111') {
-      console.log("transport to 1");
       setCategoryButtonsToLevel(1, '.lever-step-transport');
     } else if (transport.join('') === '222222') {
-      console.log("transport to 2");
       setCategoryButtonsToLevel(2, '.lever-step-transport');
     } else if (transport.join('') === '333333') {
-      console.log("transport to 3");
       setCategoryButtonsToLevel(3, '.lever-step-transport');
     } else if (transport.join('') === '444444') {
-      console.log("transport to 4");
       setCategoryButtonsToLevel(4, '.lever-step-transport');
     } else {
-      console.log("transport to 0");
       setCategoryButtonsToLevel(0, '.lever-step-transport');
+    }
+
+    console.log("household", household);
+    if (household.join('') === '1111111') {
+      console.log("household to 1");
+      setCategoryButtonsToLevel(1, '.lever-step-household');
+    } else if (household.join('') === '2222122') {
+      console.log("household to 2");
+      setCategoryButtonsToLevel(2, '.lever-step-household');
+    } else if (household.join('') === '3333133') {
+      console.log("household to 3");
+      setCategoryButtonsToLevel(3, '.lever-step-household');
+    } else if (household.join('') === '4444144') {
+      console.log("household to 4");
+      setCategoryButtonsToLevel(4, '.lever-step-household');
+    } else {
+      console.log("household to 0");
+      setCategoryButtonsToLevel(0, '.lever-step-household');
+    }
+
+    console.log("commerce", commerce);
+    if (commerce.join('') === '111111111') {
+      console.log("commerce to 1");
+      setCategoryButtonsToLevel(1, '.lever-step-commerce');
+    } else if (commerce.join('') === '221222122') {
+      console.log("commerce to 2");
+      setCategoryButtonsToLevel(2, '.lever-step-commerce');
+    } else if (commerce.join('') === '331333133') {
+      console.log("commerce to 3");
+      setCategoryButtonsToLevel(3, '.lever-step-commerce');
+    } else if (commerce.join('') === '441444144') {
+      console.log("commerce to 4");
+      setCategoryButtonsToLevel(4, '.lever-step-commerce');
+    } else {
+      console.log("commerce to 0");
+      setCategoryButtonsToLevel(0, '.lever-step-commerce');
+    }
+
+    console.log("bioenergy", bioenergy);
+    if (bioenergy.join('') === '111111') {
+      console.log("bioenergy to 1");
+      setCategoryButtonsToLevel(1, '.lever-step-bioenergy');
+    } else if (bioenergy.join('') === '222222') {
+      console.log("bioenergy to 2");
+      setCategoryButtonsToLevel(2, '.lever-step-bioenergy');
+    } else if (bioenergy.join('') === '333333') {
+      console.log("bioenergy to 3");
+      setCategoryButtonsToLevel(3, '.lever-step-bioenergy');
+    } else if (bioenergy.join('') === '444444') {
+      console.log("bioenergy to 4");
+      setCategoryButtonsToLevel(4, '.lever-step-bioenergy');
+    } else {
+      console.log("bioenergy to 0");
+      setCategoryButtonsToLevel(0, '.lever-step-bioenergy');
+    }
+
+    console.log("energyprod", energyprod);
+    if (energyprod.join('') === '11111111111111') {
+      console.log("energyprod to 1");
+      setCategoryButtonsToLevel(1, '.lever-step-energy-prod');
+    } else if (energyprod.join('') === '22221112221122') {
+      console.log("energyprod to 2");
+      setCategoryButtonsToLevel(2, '.lever-step-energy-prod');
+    } else if (energyprod.join('') === '33331113331133') {
+      console.log("energyprod to 3");
+      setCategoryButtonsToLevel(3, '.lever-step-energy-prod');
+    } else if (energyprod.join('') === '44441114441144') {
+      console.log("energyprod to 4");
+      setCategoryButtonsToLevel(4, '.lever-step-energy-prod');
+    } else {
+      console.log("energyprod to 0");
+      setCategoryButtonsToLevel(0, '.lever-step-energy-prod');
     }
 
   }
