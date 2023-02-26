@@ -538,6 +538,27 @@
     $('.lever-step').filter(function(){ return $(this).data().choicelevel <= level}).addClass("active");
   }
 
+  check_level_buttons = function(main_code) {
+    const codeArray = [...main_code];
+    // compare transport path of main_code
+    // to see if particular level should be set
+    // 11111111111111111111111112222221111111111111111111111
+    const transport = codeArray.slice(25, 6);
+    console.log("transport", transport);
+    if (transport.join('') === '111111') {
+      console.log("transport to 1");
+    } else if (transport.join('') === '222222') {
+      console.log("transport to 2");
+    } else if (transport.join('') === '333333') {
+      console.log("transport to 3");
+    } else if (transport.join('') === '444444') {
+      console.log("transport to 4");
+    } else {
+      console.log("transport to 0");
+    }
+
+  }
+
   float_to_letter_map = {
     "": "0",
     1.0: "1",
@@ -755,7 +776,7 @@
     }
     updateControls(old_choices, choices);
     main_code = codeForChoices();
-    console.log("main_code", main_code);
+    check_level_buttons(main_code);
     if (history['pushState'] != null) {
       history.pushState(choices, main_code, url());
     }
