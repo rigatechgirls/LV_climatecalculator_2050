@@ -218,6 +218,21 @@ body .about-page-wrapper {
   display: none;
 }
 
+.gauge-info {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.gauge-tooltip {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+  border: 4px solid #646569;
+  border-radius: 20px;
+  border-bottom-right-radius: 0;
+}
 
 .gauge-vertical {
   display: inline-block;

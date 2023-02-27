@@ -66,6 +66,10 @@
       $(this).css("color", "#000");
     });
 
+    $(".gauge-info").hover(function() {
+      $(".gauge-tooltip").show();
+    });
+
     $('.lever-step').on('click touchend', function(event) {
       event.preventDefault();
       t = $(event.target);
