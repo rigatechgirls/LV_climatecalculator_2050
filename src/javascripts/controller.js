@@ -66,11 +66,11 @@
       $(this).css("color", "#000");
     });
 
-    $(".gauge-vertical").mousein(function() {
+    $(".gauge-vertical").mouseover(function() {
       $(".gauge-tooltip").show();
     });
 
-    $(".gauge-vertical").mouseout(function() {
+    $(".gauge-vertical").mouseleave(function() {
       $(".gauge-tooltip").hide();
     });
 
