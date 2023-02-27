@@ -1033,3 +1033,19 @@ ol.list-tablet li:nth-child( n + 5 ) {
   .calc-structure .content-blocks:first-child .content-block__text-container {
     max-height: unset !important;
   }
+
+  .how-to-use.summary img {
+    max-width: 100%;
+  }
+
+  .calc-structure img {
+    max-width: 100%;
+  }
+
+  .scenarious img {
+    max-width: 300px;
+  }
+
+  .project-purpose img {
+    max-width: 400px;
+  }
