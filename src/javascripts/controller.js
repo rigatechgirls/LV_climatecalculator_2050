@@ -70,6 +70,10 @@
       $(".gauge-tooltip").show();
     });
 
+    $(".gauge-info").mouseout(function() {
+      $(".gauge-tooltip").hide();
+    });
+
     $('.lever-step').on('click touchend', function(event) {
       event.preventDefault();
       t = $(event.target);
