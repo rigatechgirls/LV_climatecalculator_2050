@@ -1049,3 +1049,11 @@ ol.list-tablet li:nth-child( n + 5 ) {
   .project-purpose img {
     max-width: 400px;
   }
+
+  .modal-sectors img {
+    max-width: 300px;
+  }
+
+  .modal-ambitions img {
+    max-width: 300px;
+  }
