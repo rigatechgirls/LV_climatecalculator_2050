@@ -1046,6 +1046,16 @@ ol.list-tablet li:nth-child( n + 5 ) {
     max-width: 300px;
   }
 
+  .scenarious .container-flex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  .scenarious .container-flex img:first-child {
+    margin-right: 30px !important;
+  }
+
   .project-purpose img {
     max-width: 400px;
   }
