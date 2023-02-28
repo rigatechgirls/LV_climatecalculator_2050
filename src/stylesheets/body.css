@@ -1088,3 +1088,7 @@ ol.list-tablet li:nth-child( n + 5 ) {
   .modal-ambitions img {
     max-width: 300px;
   }
+
+  .sections img {
+    width: 340px;
+  }
