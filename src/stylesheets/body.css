@@ -643,11 +643,12 @@ body .block-wrapper .block-container .project-purpose {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1084px;
-  max-height: 670px;
+  width: 1084px;
+  height: 670px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  position: absolute;
 }
 
 .modal-sections-mask.modal-sectors .modal-sections-wrapper .modal-content,
