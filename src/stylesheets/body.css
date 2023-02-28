@@ -214,7 +214,8 @@ body .about-page-wrapper {
   display: flex;
 }
 
-.about-page-wrapper .project-purpose .content-wrapper {
+.about-page-wrapper .project-purpose .content-wrapper,
+.about-page-wrapper .about-project .content-wrapper {
   display: flex;
   flex-direction: row;
 }
