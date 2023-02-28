@@ -429,12 +429,12 @@
     });
 
 
-    $('.about-project').on('click touchend', function(event){
-      event.preventDefault();
+    // $('.about-project').on('click touchend', function(event){
+    //   event.preventDefault();
 
-      // $('.modal-how-to-use').hide();
-      // $('.modal-about-project').show();
-    });
+    //   // $('.modal-how-to-use').hide();
+    //   // $('.modal-about-project').show();
+    // });
 
 
 
