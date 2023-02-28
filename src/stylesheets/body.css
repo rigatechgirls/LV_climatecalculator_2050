@@ -220,6 +220,18 @@ body .about-page-wrapper {
   flex-direction: row;
 }
 
+.about-page-wrapper .about-project .content-block__img-container {
+  flex-direction: column;
+}
+
+.about-page-wrapper .about-project .content-block__img-container .rtg img {
+  width: 310px;
+}
+
+.about-page-wrapper .about-project .content-block__img-container .brittish-embassy img {
+  width: 190px;
+}
+
 .gauge-horizontal {
   display: none;
 }
