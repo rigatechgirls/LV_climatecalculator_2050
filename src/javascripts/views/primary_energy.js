@@ -91,22 +91,22 @@ window.twentyfifty.views.primary_energy_chart = function() {
 
     this.final_energy_chart = timeSeriesStackedAreaChart()
       .title("Gala enerģijas pieprasījums")
-      .unit('PJ/yr')
+      .unit('TJ/yr')
       .css_for_label(css_for_labels)
-      .max_value(110000);
+      .max_value(250000);
 
     this.primary_energy_chart = timeSeriesStackedAreaChart()
       .title("Primārās enerģijas ieguve")
-      .unit('PJ/yr')
+      .unit('TJ/yr')
       .css_for_label(css_for_labels)
-      .max_value(110000);
+      .max_value(850000);
 
     this.emissions_chart = timeSeriesStackedAreaChart()
       .title("Siltumnīcefekta gāzes emisijas")
-      .unit('ktCO2e/yr')
+      .unit('MtCO2e/yr')
       .css_for_label(css_for_labels)
-      .min_value(-1000)
-      .max_value(8000);
+      .min_value(-20)
+      .max_value(50);
   };
 
   // This is called when a new view has been selected
