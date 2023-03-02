@@ -99,6 +99,7 @@ window.twentyfifty.views.primary_energy_chart = function() {
       .title("Primārās enerģijas ieguve")
       .unit('TJ/yr')
       .css_for_label(css_for_labels)
+      .max_value(-1000)
       .max_value(850000);
 
     this.emissions_chart = timeSeriesStackedAreaChart()
@@ -106,7 +107,7 @@ window.twentyfifty.views.primary_energy_chart = function() {
       .unit('MtCO2e/yr')
       .css_for_label(css_for_labels)
       .min_value(-20)
-      .max_value(50);
+      .max_value(65);
   };
 
   // This is called when a new view has been selected
