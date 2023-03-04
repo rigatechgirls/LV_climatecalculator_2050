@@ -181,11 +181,11 @@ body .calculator-wrapper .calculator-blocks .calculator-inputs {
   }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
  body .calculator-wrapper .calculator-blocks {
     padding: 0;
   }
-}
+} */
 
 .header-wrapper .header-block {
   box-sizing: border-box;
