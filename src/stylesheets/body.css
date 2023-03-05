@@ -671,7 +671,8 @@ body .block-wrapper .block-container .project-purpose {
   justify-content: center;
 }
 
-.modal-tablet-mask.tablet-howto .modal-tablet-wrapper .content-container.how-to-use.summary .content-blocks {
+.modal-tablet-mask.tablet-howto .modal-tablet-wrapper .content-container.how-to-use.summary .content-blocks,
+.modal-tablet-mask.tablet-howto .modal-tablet-wrapper .content-container.calc-structure .content-blocks {
   padding-bottom: 0;
 }
 
@@ -1108,6 +1109,12 @@ color: #49494D;
   flex-direction: column !important;
 }
 
+.modal-tablet-wrapper .calc-structure .content-blocks .layout-row {
+  display: flex;
+  flex-direction: column !important;
+  column-gap: 30px;
+}
+
 .modal-tablet-block {
   max-width: 727px;
   padding: 35px 40px 60px 34px;
@@ -1295,6 +1302,6 @@ ol.list-mobile li:nth-child( n + 5 ) {
   column-gap: 30px;
 }
 
-.layout-column col {
+.layout-column .col {
   flex: 1;
 }
