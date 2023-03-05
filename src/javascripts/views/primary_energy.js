@@ -9,18 +9,18 @@ window.twentyfifty.views.primary_energy_chart = function() {
       .data(['demand_chart', 'supply_chart', 'emissions_chart']);
 
     css_for_labels = {
-      'Zemkopība': 'agriculture',
+      'Zemkopība': 'agriculture', //Agriculture
       'Agriculture and land use': 'agriculture',
       'Agriculture, waste, and biomatter imports': 'bioenergy',
       'Biomass oversupply (imports)': 'bioenergy',
       'Bioenergy': 'bioenergy',
-      'UK Bioenergy': 'bioenergy',
-      'Imported Bioenergy': 'importedbioenergy',
-      'Bioenerģijas kredīts': 'bioenergy',
-      'Importētās akmeņogles': 'importedcoal',
-      'LV akmeņogles': 'coal',
+      'LV bioenerģija': 'bioenergy', //UK Bioenergy
+      'Importētā bioenerģija': 'importedbioenergy', //Imported Bioenergy
+      'Bioenerģijas kredīts': 'bioenergy', //Bioenergy credit
+      'Importētās akmeņogles': 'importedcoal', //Imported coal
+      'LV akmeņogles': 'coal', //UK coal
       'Coal': 'coal',
-      'Oglekļa piesaiste': 'carboncapture',
+      'Oglekļa piesaiste': 'carboncapture', //Carbon capture
       'Coal oversupply (imports)': 'coal',
       'Coal reserves': 'coal',
       'Commercial heating and cooling': 'commercialheat',
@@ -33,55 +33,54 @@ window.twentyfifty.views.primary_energy_chart = function() {
       'Domestic passenger transport': 'domesticpassengertransport',
       'Domestic space heating and hot water': 'domesticheat',
       'Electricity oversupply (imports)': 'electricity',
-      'Elektrības imports': 'electricity',
-      'Environmental heat': 'environmentalheat',
-      'Degvielas sadegšana': 'fuelcombustion',
+      'Elektrības imports': 'electricity', //Electricity imports
+      'Vides siltums': 'environmentalheat', //Environmental heat
+      'Degvielas sadegšana': 'fuelcombustion', //Fuel Combustion
       'Gas oversupply (imports)': 'gas',
       'Gas reserves': 'gas',
       'Geosequestration': 'geosequestration',
-      'Geothermal': 'geothermal',
+      'Ģeotermālā enerģija': 'geothermal', //Geothermal
       'Geothermal electricity': 'geothermal',
       'H2 Production for Transport': 'h2',
-      'Heating & cooling': 'heatingcooling',
+      'Apsilde & Dzesēšana': 'heatingcooling', //Heating & cooling
       'Heating and cooling': 'heatingcooling',
-      'Hydro': 'hydro',
+      'Hidroenerģija': 'hydro', //Hydro
       'Indigenous fossil-fuel production': 'industry',
-      'Industriālie procesi': 'industry',
-      'Industry': 'industry',
-      'Rūpniecības procesi': 'industry',
-      "Starpt. Aviācija un kuģniecība": 'aviationandshipping',
-      'Lighting & appliances': 'lightingappliances',
-      'ZIZIMM': 'lulucf',
+      'Rūpniecības procesi': 'industry', //Industrial processes
+      'Industriālie procesi': 'industry', //Industry
+      "Starpt. Aviācija un kuģniecība": 'aviationandshipping',//Int'l Aviation & Shipping
+      'Apgaismojums un iekārtas': 'lightingappliances', //Lighting & appliances
+      'ZIZIMM': 'lulucf',//LULUCF
       'Natural gas': 'gas',
       'Gas': 'gas',
-      'UK Gas': 'gas',
-      'Importētā gāze': 'importedgas',
+      'LV gāze': 'gas', //UK gas
+      'Importētā gāze': 'importedgas', //Imported Gas
       'Nuclear fission': 'nuclear',
       'Nuclear power': 'nuclear',
       'Oil and petroleum products': 'oil',
       'Oil and petroleum products oversupply (imports)': 'oil',
       'Oil reserves': 'oil',
       'Oil': 'oil',
-      'UK Oil': 'oil',
-      'Importētā nafta': 'importedoil',
+      'LV nafta': 'oil', //UK Oil
+      'Importētā nafta': 'importedoil', //Imported oil
       'Offshore wind': 'offshorewind',
       'Onshore wind': 'onshorewind',
       'Petroleum products oversupply': 'oil',
       'Petroleum refineries': 'industry',
       'Primary electricity, solar, marine, and net imports': 'electricity',
-      'Solar': 'solar',
+      'Saules enerģija': 'solar', //Solar
       'Solar PV': 'solar',
       'Solar thermal': 'solar',
-      'Tidal': 'tidal',
+      'Krasta enerģija': 'tidal', //Tidal
       'Tidal & Wave': 'tidalandwave',
       'Total': 'total',
       'Total³': 'total',
       'Total used in UK': 'total',
       'Total used in UK¹': 'total',
-      'Transports': 'transport',
-      'Atkritumi': 'waste',
-      'Wave': 'wave',
-      'Wind': 'wind'
+      'Transports': 'transport', //Transport
+      'Atkritumi': 'waste', //Waste
+      'Viļņu enerģija': 'wave', //Wave
+      'Vēja enerģija': 'wind' //Wind
     };
 
     charts.enter()
@@ -91,22 +90,23 @@ window.twentyfifty.views.primary_energy_chart = function() {
 
     this.final_energy_chart = timeSeriesStackedAreaChart()
       .title("Gala enerģijas pieprasījums")
-      .unit('PJ/yr')
+      .unit('TJ/yr')
       .css_for_label(css_for_labels)
-      .max_value(110000);
+      .max_value(250000);
 
     this.primary_energy_chart = timeSeriesStackedAreaChart()
       .title("Primārās enerģijas ieguve")
-      .unit('PJ/yr')
+      .unit('TJ/yr')
       .css_for_label(css_for_labels)
-      .max_value(110000);
+      .max_value(-1000)
+      .max_value(850000);
 
     this.emissions_chart = timeSeriesStackedAreaChart()
       .title("Siltumnīcefekta gāzes emisijas")
-      .unit('ktCO2e/yr')
+      .unit('MtCO2e/yr')
       .css_for_label(css_for_labels)
-      .min_value(-1000)
-      .max_value(8000);
+      .min_value(-20)
+      .max_value(65);
   };
 
   // This is called when a new view has been selected
