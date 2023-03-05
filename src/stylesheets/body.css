@@ -48,7 +48,7 @@ body {
   width: 400px;
 }
 
-@media screen and (max-width: 833px) {
+@media screen and (max-width: 834px) {
   .levers-container {
     width: 335px;
   }
@@ -146,7 +146,7 @@ body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
 
 
 
-@media screen and (max-width: 833px) {
+@media screen and (max-width: 834px) {
   .calculator-wrapper .calculator-blocks .calculator-inputs .levers-container .levers-table {
     width: 335px;
   }
@@ -181,7 +181,7 @@ body .calculator-wrapper .calculator-blocks .calculator-inputs {
   max-width: 400px;
 }
 
-@media screen and (max-width: 833px) {
+@media screen and (max-width: 834px) {
   body .calculator-wrapper .calculator-blocks .calculator-inputs {
     max-width: 335px;
   }
@@ -710,7 +710,7 @@ body .block-wrapper .block-container .project-purpose {
   }
 }
 
-@media screen and (max-width: 833px) {
+@media screen and (max-width: 834px) {
   .modal-sections-mask.modal-sectors .modal-sections-wrapper ,
   .modal-sections-mask.modal-ambitions .modal-sections-wrapper {
     width: 335px;
@@ -1101,7 +1101,7 @@ body .block-wrapper .block-container .project-purpose {
   }
 }
 
-@media screen and (max-width: 833px) {
+@media screen and (max-width: 834px) {
   .img-mobile {
     display: flex!important;
     margin-top: 0;
@@ -1110,7 +1110,7 @@ body .block-wrapper .block-container .project-purpose {
   }
 }
 
-@media screen and (min-width: 833px) {
+@media screen and (min-width: 834px) {
   .img-mobile {
     display: none !important;
   }
@@ -1189,7 +1189,7 @@ ol.list-tablet li:nth-child( n + 5 ) {
     width: 340px;
   }
 
-  @media screen and (max-width: 833px) {
+  @media screen and (max-width: 834px) {
     .modal-ambitions img {
       max-width: 240px;
       margin-left: auto;
