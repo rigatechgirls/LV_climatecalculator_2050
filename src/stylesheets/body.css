@@ -251,6 +251,11 @@ body .about-page-wrapper {
   display: flex;
 }
 
+.how-to-use-wrapper .block-container,
+.about-page-wrapper .block-container {
+  box-sizing: border-box;
+}
+
 .about-page-wrapper .project-purpose .content-wrapper,
 .about-page-wrapper .about-project .content-wrapper {
   display: flex;
@@ -652,6 +657,10 @@ body .block-wrapper .block-container .project-purpose {
 @media screen and (min-width: 1280px) {
   .page-links .modal-mask.nav-sidebar.open {
     display: none;
+  }
+
+  .levers {
+    width: 380px;
   }
 }
 
