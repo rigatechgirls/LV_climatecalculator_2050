@@ -1115,8 +1115,15 @@ color: #49494D;
   column-gap: 30px;
 }
 
+.modal-tablet-wrapper .scenarious .content-blocks .layout-row {
+  display: flex;
+  flex-direction: row !important;
+  column-gap: 30px;
+}
+
 .modal-tablet-block {
   max-width: 727px;
+  max-height: 833px;
   padding: 35px 40px 60px 34px;
   display: flex;
   flex-direction: column;
