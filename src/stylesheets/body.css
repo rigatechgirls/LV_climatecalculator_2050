@@ -284,6 +284,21 @@ body .about-page-wrapper {
   width: 18px;
 }
 
+.gauge-horizontal .gauge-info {
+  position: absolute;
+  right: -25px;
+  top: 15px;
+
+  border: solid 2px #C7DDFD;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  width: 18px;
+}
+
 .output-charts-container {
   position: relative;
 }

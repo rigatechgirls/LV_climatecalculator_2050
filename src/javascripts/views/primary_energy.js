@@ -177,11 +177,9 @@ window.twentyfifty.views.primary_energy_chart = function() {
         gaugeResults = 0;
       }
 
-      if (gaugeResults > 100) {
-        gaugeResults = 100;
+      if (gaugeResults > 1) {
+        gaugeResults = 1;
       }
-
-      console.log("gaugeResults", gaugeResults, gaugeResults > 100);
 
     $('.column-vertical').animate({
       height: Math.round(gaugeResults*100)+'%',
@@ -214,7 +212,7 @@ window.twentyfifty.views.primary_energy_chart = function() {
       current = parseInt(this.textContent) || +d;
       i = d3.interpolateRound(current, +d);
       return function(t) {
-        return this.textContent = "" + (i(t)) + "% samzinājums 1990-2060; Mērķis ir 80%";
+        return ''; //this.textContent = "" + (i(t)) + "% samzinājums 1990-2060; Mērķis ir 80%";
       };
     });
 
