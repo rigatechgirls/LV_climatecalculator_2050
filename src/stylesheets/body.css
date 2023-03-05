@@ -512,9 +512,13 @@ body .about-page-wrapper {
   letter-spacing: -0.02em;
   color: #49494D;
   padding: 4px 20px;
-  background: #F1F1F1;
+  background: none;
   border-radius: 50px;
   border: none;
+}
+
+.share_link svg {
+  margin-right: 10px;
 }
 
 .share_link:hover {
