@@ -695,8 +695,9 @@ body .block-wrapper .block-container .project-purpose {
 }
 
 .modal-sections-mask .content-container.sections .content-blocks .content-block.desktop-sections,
-.modal-sections-mask .content-container.steps .content-blocks .content-block.desktop-sections {
-  display: flex;
+.modal-sections-mask .content-container.steps .content-blocks .content-block.desktop-sections,
+.desktop-sections {
+  display: block;
 }
 
 @media screen and (min-width: 834px) and (max-width: 1281px) {
@@ -721,7 +722,13 @@ body .block-wrapper .block-container .project-purpose {
   .modal-sections-mask .content-container.sections .content-blocks .content-block.tablet-sections,
   .modal-sections-mask .content-container.steps .content-blocks .content-block.tablet-sections,
   .tablet-sections {
-    display: flex;
+    display: block;
+  }
+
+  .modal-sections-mask .content-container.sections .content-blocks .content-block.desktop-sections,
+  .modal-sections-mask .content-container.steps .content-blocks .content-block.desktop-sections,
+  .desktop-sections {
+    display: none;
   }
 }
 
