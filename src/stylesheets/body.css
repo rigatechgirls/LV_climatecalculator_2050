@@ -1345,7 +1345,7 @@ ol.list-mobile li:nth-child( n + 5 ) {
   margin-bottom: 0;
 }
 
-.tablet-about .project-purpose .col {
+.tablet-about .project-purpose .content-blocks .content-block__img-container.col {
   margin: 0;
 }
 
