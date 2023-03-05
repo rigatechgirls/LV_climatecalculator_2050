@@ -459,7 +459,9 @@ body .about-page-wrapper {
 }
 
 .mobile-charts-sub-menu {
-display: none;
+  display: none;
+  z-index: 9;
+  background: #fff;
 }
 
 .charts-dropdown .menu-item {
@@ -704,10 +706,12 @@ body .block-wrapper .block-container .project-purpose {
   .modal-sections-mask.modal-sectors .modal-sections-wrapper .modal-sections-block,
   .modal-sections-mask.modal-ambitions .modal-sections-wrapper .modal-sections-block {
     padding: 20px;
+    margin: 0;
   }
 
   .mobile-sections {
     display: flex;
+    column-gap: 10px;
   }
 
   .mobile-sections p {
@@ -721,6 +725,7 @@ body .block-wrapper .block-container .project-purpose {
     padding-left: 25px;
     font-family: "Rubik";
     font-size: 13px;
+    margin-bottom: 15px;
   }
 
   .mobile-sections .mobile-image {
