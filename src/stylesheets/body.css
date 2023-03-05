@@ -713,12 +713,14 @@ body .block-wrapper .block-container .project-purpose {
   .mobile-sections p {
     color: #49494D;
     font-family: "Rubik";
+    font-size: 13px;
   }
 
   .mobile-sections ul {
     color: #49494D;
     padding-left: 25px;
     font-family: "Rubik";
+    font-size: 13px;
   }
 
   .mobile-sections .mobile-image {
