@@ -1027,6 +1027,13 @@ nav.navigation-modal-windows {
   padding: 50px 34px 15px 34px;
   margin: auto;
 }
+
+@media screen and (min-width: 1280px) {
+  .calculator-wrapper .calculator-blocks {
+    width: 1210px;
+  }
+}
+
 @media screen and (max-width: 1254px) {
   .calculator-wrapper .calculator-blocks {
     max-width: 756px;
