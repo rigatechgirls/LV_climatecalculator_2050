@@ -1235,3 +1235,21 @@ ol.list-tablet li:nth-child( n + 5 ) {
       padding-left: 10px;
     }
   }
+
+
+ol.list-mobile {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+ol.list-mobile li:nth-child( n + 2 ) {
+    float: left;
+    margin-right: 6px;
+    padding-right: 6px;
+}
+ol.list-mobile li:nth-child( n + 5 ) {
+    float: inherit;
+    margin-right: 0;
+    padding-right: 0;
+}
