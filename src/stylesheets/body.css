@@ -32,7 +32,7 @@ body {
   flex-direction: row-reverse;
 }
 
-@media screen and (max-width: 1281px) {
+@media screen and (max-width: 1280px) {
   #results {
     flex-direction: column-reverse;
   }
@@ -203,7 +203,7 @@ body .calculator-wrapper .calculator-blocks .calculator-inputs {
   transform: unset;
 }
 
-@media screen and (max-width: 1281px) {
+@media screen and (max-width: 1280px) {
   .calculator-wrapper .calculator-blocks .calculator-inputs.open {
     position: absolute;
     background: #fff;
@@ -307,7 +307,7 @@ body .about-page-wrapper {
   display: inline-block;
 }
 
-@media screen and (max-width: 1281px) {
+@media screen and (max-width: 1280px) {
   .gauge-vertical {
     display: none;
   }
@@ -472,7 +472,7 @@ body .about-page-wrapper {
   display: none;
 }
 
-@media screen and (max-width: 1255px) {
+@media screen and (max-width: 1280px) {
   .mobile-controls-wrapper {
     display: flex;
       flex-direction: row;
@@ -496,7 +496,7 @@ body .about-page-wrapper {
 .hide-on-desktop {
   display: none !important;
 }
-@media screen and (max-width: 1255px) {
+@media screen and (max-width: 1280px) {
   .levers-sector .lever-steps-container .lever-step {
     height: 30px;
     width: 30px;
@@ -523,7 +523,7 @@ body .about-page-wrapper {
   overflow: hidden;
 } */
 
-@media screen and (max-width: 1281px) {
+@media screen and (max-width: 1280px) {
   .hide-overflow {
     overflow: hidden;
   }
@@ -571,7 +571,7 @@ body .block-wrapper .block-container .project-purpose {
   display: table;
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1280px) {
   .page-links .modal-mask.nav-sidebar.open {
     display: none;
   }
@@ -702,7 +702,7 @@ body .block-wrapper .block-container .project-purpose {
   display: block;
 }
 
-@media screen and (min-width: 834px) and (max-width: 1281px) {
+@media screen and (min-width: 834px) and (max-width: 1280px) {
 
   /* what is this? */
   .modal-tablet-mask.tablet-about,
