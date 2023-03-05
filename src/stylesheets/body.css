@@ -967,13 +967,25 @@ body .block-wrapper .block-container .project-purpose {
 .modal-calculator-structure-mask.modal-calculator-structure .content-block__text-container h1,
 .modal-calculator-scenarious-mask.modal-calculator-scenarious  .content-block__text-container h1,
 .modal-about-mask.modal-project-about .content-block__text-container h1,
-.modal-goals-mask.modal-project-goals  .content-block__text-container h1,
-.modal-tablet-mask.tablet-about .modal-tablet-wrapper .content-block__text-container h1,
-.modal-tablet-mask.tablet-howto .modal-tablet-wrapper .content-block__text-container h1
+.modal-goals-mask.modal-project-goals  .content-block__text-container h1
  {
   font-weight: 500;
   font-size: 18px;
   color: #646569;
+}
+
+.modal-tablet-mask.tablet-about .modal-tablet-wrapper .content-block__text-container h1,
+.modal-tablet-mask.tablet-howto .modal-tablet-wrapper .content-block__text-container h1 {
+  font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 27px;
+line-height: 32px;
+/* identical to box height */
+
+letter-spacing: -0.04em;
+
+color: #49494D;
 }
 
 .modal-how-to-use-mask.modal-how-to-use .content-blocks .content-block__text-container h2,
@@ -1011,9 +1023,9 @@ body .block-wrapper .block-container .project-purpose {
     border-bottom: solid 4px #EBF3FF;
   font-family: "Rubik";
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
   letter-spacing: -0.04em;
   color: #49494D;
 }
@@ -1264,4 +1276,9 @@ ol.list-mobile li:nth-child( n + 5 ) {
     float: inherit;
     margin-right: 0;
     padding-right: 0;
+}
+
+.layout-column {
+  display: flex;
+  column-gap: 30px;
 }
