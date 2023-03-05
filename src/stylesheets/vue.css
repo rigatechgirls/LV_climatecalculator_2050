@@ -114,7 +114,7 @@
 .modal-mask.summary .modal-wrapper-summary .modal-block-summary .content-container .content-blocks .content-block__text-container h2 {
   font-weight: 500;
   margin-bottom: 0;
-  border-bottom: solid 4px #EBF3FF;
+  border-bottom: solid 4px #F1F1F1;
 }
 .modal-mask.summary .modal-wrapper-summary .modal-block-summary .content-container .content-blocks .content-block__text-container .text-container-tablet-layout {
   display: flex;
@@ -303,7 +303,7 @@
 .modal-mask.scenarious .modal-wrapper-scenarious .modal-block-scenarious .content-container .content-blocks .content-block__text-container h2 {
   font-weight: 500;
   margin-bottom: 0;
-  border-bottom: solid 4px #EBF3FF;
+  border-bottom: solid 4px #F1F1F1;
 }
 .modal-mask.scenarious .modal-wrapper-scenarious .modal-block-scenarious .content-container .content-blocks .content-block__text-container .text-container-tablet-layout {
   display: flex;
@@ -453,7 +453,7 @@
 .modal-mask.project-purpose .modal-wrapper-project-purpose .modal-block-project-purpose .content-container.project-purpose .content-blocks .content-block__text-container h2 {
   font-weight: 500;
   margin-bottom: 0;
-  border-bottom: solid 4px #EBF3FF;
+  border-bottom: solid 4px #F1F1F1;
 }
 .modal-mask.project-purpose .modal-wrapper-project-purpose .modal-block-project-purpose .content-container.project-purpose .content-blocks .content-block__img-container {
   display: flex;
@@ -615,7 +615,7 @@ nav.navigation-modal-windows {
   position: sticky;
   top: 0;
   z-index: 99;
-  border-bottom: solid 8px #F1F1F1;
+  /* border-bottom: solid 8px #F1F1F1; */
 }
 .header-wrapper .header-block {
   display: flex;
@@ -725,7 +725,7 @@ nav.navigation-modal-windows {
   text-align: center;
   letter-spacing: -0.02em;
   color: #FFFFFF;
-  background: #DEA613;
+  background: #829A59;
   border-radius: 4px;
   border: none;
   white-space: nowrap;
@@ -782,13 +782,13 @@ nav.navigation-modal-windows {
   border: none;
 }
 .button-container .button__reset {
-  background: #DEA613;
+  background: #829A59;
 }
 .button-container .button__reset:active {
   background: #FFC627;
 }
 .button-container .button__results {
-  background: #829A59;
+  background: #DEA613;
 }
 .button-container .button__results:active {
   background: #B5CC8D;
@@ -1023,7 +1023,7 @@ nav.navigation-modal-windows {
   display: flex;
   flex-direction: row;
   flex: 1;
-  max-width: 1210px;
+  width: 1210px;
   padding: 50px 34px 15px 34px;
   margin: auto;
 }
@@ -1080,7 +1080,7 @@ nav.navigation-modal-windows {
   letter-spacing: -0.02em;
   color: #FFFFFF;
   padding: 8px 12px;
-  background: #DEA613;
+  background: #829A59;
   border-radius: 4px;
   border: none;
 }
@@ -1191,13 +1191,13 @@ nav.navigation-modal-windows {
   cursor: pointer;
   font-weight: 500;
   border-radius: 50px;
-  background: #EBF3FF;
+  background: #F1F1F1;
 }
 .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu .subtab-menu-charts span:active {
   cursor: pointer;
   font-weight: 500;
   border-radius: 50px;
-  background: #FFF3D3;
+  background: #EBF3FF;
 }
 @media screen and (max-width: 920px) {
   .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu .subtab-menu-charts {
@@ -1229,7 +1229,7 @@ nav.navigation-modal-windows {
   .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu .charts-dropdown .menu-item a:active {
     font-weight: 500;
     border-radius: 50px;
-    background: #FFF3D3;
+    background: #EBF3FF;
   }
 }
 @media screen and (max-width: 920px) and (max-width: 430px) {
@@ -1517,7 +1517,7 @@ nav.navigation-modal-windows {
 }
 .calc-structure .content-blocks:first-child .content-block__text-container {
   display: flex;
-  background: #EBF3FF;
+  background: #F1F1F1;
   max-height: 184px;
   padding: 16.5px 46.5px 23.5px 6.5px;
   box-sizing: border-box;
@@ -1699,7 +1699,7 @@ nav.navigation-modal-windows {
 }
 .block-wrapper .block-container .tab-container .tab-links.router-link-active,
 .block-wrapper .block-container .tab-container .tab-links .router-link-exact-active {
-  background: #EBF3FF;
+  background: #F1F1F1;
 }
 .block-wrapper .block-container .content-container {
   padding: 34px 0 60px 0;
@@ -1737,7 +1737,7 @@ nav.navigation-modal-windows {
 .block-wrapper .block-container .content-container .content-blocks .content-block__text-container h2 {
   font-weight: 500;
   margin-bottom: 0;
-  border-bottom: solid 4px #EBF3FF;
+  border-bottom: solid 4px #F1F1F1;
 }
 @media screen and (max-width: 1279px) {
   .block-wrapper .block-container {
@@ -2018,7 +2018,7 @@ nav.navigation-modal-windows {
   width: 150px;
 }
 .modal-how-to-use-mask .modal-how-to-use-wrapper .modal-how-to-use-block .how-to-use-tab-container nav a.router-link-exact-active {
-  background: #EBF3FF;
+  background: #F1F1F1;
 }
 .modal-how-to-use-mask .modal-how-to-use-wrapper .modal-how-to-use-block .how-to-use-content-container {
   display: flex;
@@ -2169,7 +2169,7 @@ nav.navigation-modal-windows {
   border: none;
 }
 .button-container .button__reset {
-  background: #DEA613;
+  background: #829A59;
 }
 .button-container .button__reset:active {
   background: #FFC627;

@@ -74,6 +74,14 @@
       $(".gauge-tooltip").hide();
     });
 
+    $(".gauge-horizontal").mouseover(function() {
+      $(".gauge-tooltip-h").show();
+    });
+
+    $(".gauge-horizontal").mouseleave(function() {
+      $(".gauge-tooltip-h").hide();
+    });
+
     $('.lever-step').on('click touchend', function(event) {
       event.preventDefault();
       t = $(event.target);
