@@ -984,7 +984,8 @@ body .block-wrapper .block-container .project-purpose {
 }
 
 .modal-tablet-mask.tablet-about .modal-tablet-wrapper .content-block__text-container h1,
-.modal-tablet-mask.tablet-howto .modal-tablet-wrapper .content-block__text-container h1 {
+.modal-tablet-mask.tablet-howto .modal-tablet-wrapper .content-block__text-container h1,
+.how-to-use.summary h1 {
   font-family: 'Rubik';
 font-style: normal;
 font-weight: 500;
