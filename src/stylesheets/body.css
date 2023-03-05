@@ -764,7 +764,8 @@ body .block-wrapper .block-container .project-purpose {
   }
 
   .modal-sections-mask .content-container.sections .content-blocks .content-block.desktop-sections,
-  .modal-sections-mask .content-container.steps .content-blocks .content-block.desktop-sections {
+  .modal-sections-mask .content-container.steps .content-blocks .content-block.desktop-sections,
+  .desktop-sections {
     display: none;
   }
 
