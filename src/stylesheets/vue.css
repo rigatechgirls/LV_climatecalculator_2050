@@ -1141,7 +1141,7 @@ nav.navigation-modal-windows {
   justify-content: flex-start;
   align-items: center;
 }
-@media screen and (max-width: 1254px) {
+@media screen and (max-width: 1280px) {
   .calculator-wrapper .calculator-blocks .calculator-inputs {
     display: none;
   }
