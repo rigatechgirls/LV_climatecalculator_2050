@@ -1111,7 +1111,7 @@ color: #49494D;
 
 .modal-tablet-wrapper .calc-structure .content-blocks .layout-row {
   display: flex;
-  flex-direction: column !important;
+  flex-direction: row !important;
   column-gap: 30px;
 }
 
