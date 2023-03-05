@@ -705,14 +705,14 @@ body .block-wrapper .block-container .project-purpose {
   display: block;
 }
 
-@media screen and (min-width: 834px) and (max-width: 1280px) {
-
-  /* what is this? */
+@media screen and (max-width: 834px) and (min-width: 1280px) {
   .modal-tablet-mask.tablet-about,
   .modal-tablet-mask.tablet-howto {
     display: none !important;
   }
+}
 
+@media screen and (min-width: 834px) and (max-width: 1280px) {
   .modal-sections-mask.modal-sectors .modal-sections-wrapper ,
   .modal-sections-mask.modal-ambitions .modal-sections-wrapper {
     width: 727px;
