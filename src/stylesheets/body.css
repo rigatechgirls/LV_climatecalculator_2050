@@ -155,7 +155,7 @@ body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
     width: 335px;
   }
 
-  .sector-name {
+  .levers .levers-sector-container .levers-sector .card .sector-name {
     font-size: 12px;
   }
 
@@ -696,6 +696,13 @@ body .block-wrapper .block-container .project-purpose {
   .modal-sections-mask.modal-sectors .modal-sections-wrapper ,
   .modal-sections-mask.modal-ambitions .modal-sections-wrapper {
     width: 335px;
+    height: 560px;
+    overflow-y: scroll;
+  }
+
+  .modal-sections-mask.modal-sectors .modal-sections-wrapper .modal-sections-block,
+  .modal-sections-mask.modal-ambitions .modal-sections-wrapper .modal-sections-block {
+    padding: 20px;
   }
 
   .mobile-sections {
