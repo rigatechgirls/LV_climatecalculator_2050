@@ -698,6 +698,7 @@ body .block-wrapper .block-container .project-purpose {
     width: 335px;
     height: 560px;
     overflow-y: scroll;
+    align-items: flex-start;
   }
 
   .modal-sections-mask.modal-sectors .modal-sections-wrapper .modal-sections-block,
@@ -709,8 +710,15 @@ body .block-wrapper .block-container .project-purpose {
     display: flex;
   }
 
-  .mobile-sections .col {
+  .mobile-sections p {
+    color: #49494D;
+    font-family: "Rubik";
+  }
 
+  .mobile-sections ul {
+    color: #49494D;
+    padding-left: 25px;
+    font-family: "Rubik";
   }
 
   .mobile-sections .mobile-image {
