@@ -673,7 +673,7 @@ body .block-wrapper .block-container .project-purpose {
   display: none;
 }
 
-.modal-sections-mask.modal-sectors .modal-sections-wrapper ,
+.modal-sections-mask.modal-sectors .modal-sections-wrapper,
 .modal-sections-mask.modal-ambitions .modal-sections-wrapper {
   display: flex;
   justify-content: center;
