@@ -694,6 +694,20 @@ body .block-wrapper .block-container .project-purpose {
   display: none;
 }
 
+@media screen and (max-width: 834px) and (min-width: 1281px) {
+  .modal-tablet-mask.tablet-about,
+  .modal-tablet-mask.tablet-howto {
+    display: none !important;
+  }
+
+  .modal-sections-mask.modal-sectors .modal-sections-wrapper ,
+  .modal-sections-mask.modal-ambitions .modal-sections-wrapper {
+    width: 727px;
+    height: 833px;
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 833px) {
   .modal-sections-mask.modal-sectors .modal-sections-wrapper ,
   .modal-sections-mask.modal-ambitions .modal-sections-wrapper {
@@ -855,13 +869,6 @@ body .block-wrapper .block-container .project-purpose {
     display: none !important;
   }
 
-}
-
-@media screen and (max-width: 834px) and (min-width: 1281px) {
-  .modal-tablet-mask.tablet-about,
-  .modal-tablet-mask.tablet-howto {
-    display: none !important;
-  }
 }
 
 
