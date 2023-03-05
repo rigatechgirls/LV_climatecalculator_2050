@@ -705,7 +705,14 @@ body .block-wrapper .block-container .project-purpose {
   display: block;
 }
 
-@media screen and (max-width: 834px) and (min-width: 1280px) {
+@media screen and (max-width: 834px) {
+  .modal-tablet-mask.tablet-about,
+  .modal-tablet-mask.tablet-howto {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1280px) {
   .modal-tablet-mask.tablet-about,
   .modal-tablet-mask.tablet-howto {
     display: none !important;
