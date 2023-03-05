@@ -1100,7 +1100,7 @@ body .block-wrapper .block-container .project-purpose {
   }
 }
 
-@media screen and (min-width: 834px) {
+@media screen and (min-width: 833px) {
   .img-mobile {
     display: none !important;
   }
@@ -1177,4 +1177,16 @@ ol.list-tablet li:nth-child( n + 5 ) {
 
   .sections img {
     width: 340px;
+  }
+
+  @media screen and (min-width: 833px) {
+    .modal-ambitions img {
+      max-width: 240px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .modal-ambitions ol {
+      padding-left: 10px;
+    }
   }
