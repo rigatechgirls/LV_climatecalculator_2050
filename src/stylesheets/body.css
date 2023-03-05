@@ -725,14 +725,15 @@ body .block-wrapper .block-container .project-purpose {
     padding-left: 25px;
     font-family: "Rubik";
     font-size: 13px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 
   .mobile-sections .mobile-image {
     width: 123px;
   }
 
-  .tablet-sections {
+  .modal-sections-mask .content-container.sections .content-blocks .content-block.tablet-sections,
+  .modal-sections-mask .content-container.steps .content-blocks .content-block.tablet-sections {
     display: none;
   }
 }
