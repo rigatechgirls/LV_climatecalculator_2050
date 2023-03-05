@@ -1362,3 +1362,21 @@ ol.list-mobile li:nth-child( n + 5 ) {
   letter-spacing: -0.04em;
   color: #49494D;
 }
+
+.about-devs,
+.about-mentors {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.04em;
+  color: #49494D;
+}
+
+.about-devs {
+  width: 340px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  margin-right: 60px;
+}
