@@ -181,6 +181,8 @@ window.twentyfifty.views.primary_energy_chart = function() {
         gaugeResults = 100;
       }
 
+      console.log("gaugeResults", gaugeResults, gaugeResults > 100);
+
     $('.column-vertical').animate({
       height: Math.round(gaugeResults*100)+'%',
     });
