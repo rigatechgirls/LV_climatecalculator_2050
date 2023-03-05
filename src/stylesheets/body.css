@@ -717,6 +717,12 @@ body .block-wrapper .block-container .project-purpose {
   .modal-ambitions ol {
     padding-left: 10px;
   }
+
+  .modal-sections-mask .content-container.sections .content-blocks .content-block.tablet-sections,
+  .modal-sections-mask .content-container.steps .content-blocks .content-block.tablet-sections,
+  .tablet-sections {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 834px) {
