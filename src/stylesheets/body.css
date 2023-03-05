@@ -686,13 +686,11 @@ body .block-wrapper .block-container .project-purpose {
   position: absolute;
 }
 
-.modal-sections-mask .content-container.sections .content-blocks .content-block.tablet-sections,
-.modal-sections-mask .content-container.steps .content-blocks .content-block.tablet-sections {
+.tablet-sections {
   display: none;
 }
 
-.modal-sections-mask .content-container.sections .content-blocks .content-block.mobile-sections,
-.modal-sections-mask .content-container.steps .content-blocks .content-block.mobile-sections {
+.mobile-sections {
   display: none;
 }
 
