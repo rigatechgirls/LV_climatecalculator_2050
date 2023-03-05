@@ -180,8 +180,13 @@ window.twentyfifty.views.primary_energy_chart = function() {
       width: Math.round(percent*100)+'%',
     });
 
+    let gaugeTop = percent;
+    if (gaugeTop < 0) {
+      gaugeTop = 0;
+    }
+
     $('.gauge-vertical .label-percent').animate({
-      top: Math.round(percent*100)+'%',
+      top: Math.round(gaugeTop*100)+'%',
     });
 
     $('.gauge-horizontal .label-percent').animate({
@@ -189,6 +194,7 @@ window.twentyfifty.views.primary_energy_chart = function() {
     });
 
     $('.label-percent').text("-"+Math.round(percent*100)+'%');
+
     $('.gauge-percent').text(Math.round(percent*100));
 
     t.enter().append('text')
