@@ -686,12 +686,19 @@ body .block-wrapper .block-container .project-purpose {
   position: absolute;
 }
 
-.tablet-sections {
-  display: block;
+.modal-sections-mask .content-container.sections .content-blocks .content-block.tablet-sections,
+.modal-sections-mask .content-container.steps .content-blocks .content-block.tablet-sections {
+  display: none;
 }
 
-.mobile-sections {
+.modal-sections-mask .content-container.sections .content-blocks .content-block.mobile-sections,
+.modal-sections-mask .content-container.steps .content-blocks .content-block.mobile-sections {
   display: none;
+}
+
+.modal-sections-mask .content-container.sections .content-blocks .content-block.desktop-sections,
+.modal-sections-mask .content-container.steps .content-blocks .content-block.desktop-sections {
+  display: flex;
 }
 
 @media screen and (min-width: 834px) and (max-width: 1281px) {
@@ -707,6 +714,10 @@ body .block-wrapper .block-container .project-purpose {
     width: 727px;
     height: 833px;
     margin: 0;
+  }
+
+  .modal-ambitions ol {
+    padding-left: 10px;
   }
 }
 
@@ -746,6 +757,11 @@ body .block-wrapper .block-container .project-purpose {
 
   .mobile-sections .mobile-image {
     width: 123px;
+  }
+
+  .modal-sections-mask .content-container.sections .content-blocks .content-block.desktop-sections,
+  .modal-sections-mask .content-container.steps .content-blocks .content-block.desktop-sections {
+    display: none;
   }
 
   .modal-sections-mask .content-container.sections .content-blocks .content-block.tablet-sections,
