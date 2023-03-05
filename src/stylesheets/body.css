@@ -1337,4 +1337,28 @@ ol.list-mobile li:nth-child( n + 5 ) {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  letter-spacing: -0.04em;
+}
+
+.tablet-howto .modal-tablet-block .scenarious .content-blocks {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.tablet-about .project-purpose .col {
+  margin: 0;
+}
+
+.tablet-about .project-purpose img {
+  width: 308px;
+}
+
+.tablet-about .project-purpose ul {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.04em;
+  color: #49494D;
 }
