@@ -655,6 +655,8 @@ body .block-wrapper .block-container .project-purpose {
   margin-top: 5%;
   box-sizing: border-box;
   max-width: 420px;
+  max-height: 560px;
+  overflow-y: scroll;
 }
 
 .modal-tablet-mask.tablet-about .modal-tablet-wrapper,
@@ -1241,6 +1243,9 @@ ol.list-mobile {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    font-family: Rubik;
+    font-size: 12px;
+    color: #49494D;
 }
 
 ol.list-mobile li:nth-child( n + 2 ) {
