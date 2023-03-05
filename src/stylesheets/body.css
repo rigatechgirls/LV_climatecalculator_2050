@@ -694,7 +694,9 @@ body .block-wrapper .block-container .project-purpose {
   display: none;
 }
 
-@media screen and (max-width: 834px) and (min-width: 1281px) {
+@media screen and (min-width: 834px) and (max-width: 1281px) {
+
+  /* what is this? */
   .modal-tablet-mask.tablet-about,
   .modal-tablet-mask.tablet-howto {
     display: none !important;
