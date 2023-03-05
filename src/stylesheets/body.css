@@ -1361,6 +1361,7 @@ ol.list-mobile li:nth-child( n + 5 ) {
   line-height: 17px;
   letter-spacing: -0.04em;
   color: #49494D;
+  padding-left: 25px;
 }
 
 .about-devs,
@@ -1379,4 +1380,17 @@ ol.list-mobile li:nth-child( n + 5 ) {
   padding-left: 20px;
   box-sizing: border-box;
   margin-right: 60px;
+}
+
+.about-mentors {
+  padding-left: 20px;
+}
+
+.tablet-about .project-purpose .content-blocks:first-child .content-block__text-container p,
+.tablet-about .project-purpose .content-blocks:first-child .content-block__text-container ul {
+  width: 100%;
+}
+
+.tablet-about .project-purpose .content-blocks {
+  padding-bottom: 0;
 }
