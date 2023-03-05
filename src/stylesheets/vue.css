@@ -1023,7 +1023,7 @@ nav.navigation-modal-windows {
   display: flex;
   flex-direction: row;
   flex: 1;
-  max-width: 1210px;
+  width: 1210px;
   padding: 50px 34px 15px 34px;
   margin: auto;
 }
