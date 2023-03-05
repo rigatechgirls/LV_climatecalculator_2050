@@ -671,6 +671,14 @@ body .block-wrapper .block-container .project-purpose {
   justify-content: center;
 }
 
+.modal-tablet-mask.tablet-howto .modal-tablet-wrapper .content-container.how-to-use.summary .content-blocks {
+  padding-bottom: 0;
+}
+
+.modal-tablet-mask.tablet-howto .modal-tablet-wrapper .content-container.how-to-use.summary .content-blocks .content-block__img-container {
+  margin-top: 0 auto 60px;
+}
+
 .modal-sections-mask.modal-sectors,
 .modal-sections-mask.modal-ambitions {
   display: none;
@@ -1096,6 +1104,10 @@ color: #49494D;
   display: none;
 }
 
+.modal-tablet-wrapper .calc-structure .content-blocks.layout-column{
+  flex-direction: column !important;
+}
+
 .modal-tablet-block {
   max-width: 727px;
   padding: 35px 40px 60px 34px;
@@ -1281,4 +1293,8 @@ ol.list-mobile li:nth-child( n + 5 ) {
 .layout-column {
   display: flex;
   column-gap: 30px;
+}
+
+.layout-column col {
+  flex: 1;
 }
