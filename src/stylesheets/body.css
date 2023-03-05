@@ -124,18 +124,18 @@ body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
   cursor: pointer;
   font-weight: 500;
   border-radius: 50px;
-  background: #EBF3FF;
+  background: #F1F1F1;
 }
 
 .subtab-menu-charts a:active {
   cursor: pointer;
   font-weight: 500;
   border-radius: 50px;
-  background: #FFF3D3;
+  background: #EBF3FF;
 }
 
 .subtab-menu-charts a.chart-selected {
-  background: #FFF3D3;
+  background: #EBF3FF;
   font-weight: 500;
   border-radius: 50px;
 }
@@ -345,6 +345,17 @@ body .about-page-wrapper {
     font-size: 12px;
 }
 
+.gauge-vertical .gauge-title {
+  width: 96px;
+    font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.04em;
+
+  color: #49494D;
+}
+
 .gauge-horizontal .label-begin {
   position: absolute;
     z-index: 1;
@@ -357,6 +368,15 @@ body .about-page-wrapper {
   bottom: 31px;
   right: -12px;
     font-size: 12px;
+}
+
+.gauge-horizontal .gauge-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #49494D;
 }
 
 .gauge-vertical .column-wrapper{
@@ -649,14 +669,19 @@ body .block-wrapper .block-container .project-purpose {
 .modal-goals-mask.modal-project-goals .content-container{
   width: 90%;
   background: #fff;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   border-radius: 4px;
-  margin-top: 5%;
+  /* margin-top: 5%; */
   box-sizing: border-box;
   max-width: 420px;
   max-height: 560px;
   overflow-y: scroll;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
 .modal-tablet-mask.tablet-about .modal-tablet-wrapper,
@@ -900,7 +925,7 @@ body .block-wrapper .block-container .project-purpose {
   width: 60%;
   font-weight: 500;
   margin-bottom: 0;
-  border-bottom: solid 4px #EBF3FF;
+  border-bottom: solid 4px #F1F1F1;
 }
 
 .modal-sections-mask .content-container.sections .content-blocks .content-block p,
@@ -1005,7 +1030,7 @@ color: #49494D;
 .modal-goals-mask.modal-project-goals  .content-block__text-container h2 {
   font-weight: 500;
   margin-bottom: 0;
-  border-bottom: solid 4px #EBF3FF;
+  border-bottom: solid 4px #F1F1F1;
   color: #646569;
   font-size: 13px;
 }
@@ -1030,7 +1055,7 @@ color: #49494D;
 .modal-tablet-mask.tablet-howto .modal-tablet-wrapper .content-block__text-container h2 {
   font-weight: 500;
     margin-bottom: 0;
-    border-bottom: solid 4px #EBF3FF;
+    border-bottom: solid 4px #F1F1F1;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
@@ -1180,7 +1205,7 @@ color: #49494D;
 }
 
 .modal-tablet-wrapper .tab-container .tab-links .tab-link-item.router-link-exact-active {
-  background: #EBF3FF;
+  background: #F1F1F1;
 }
 
 @media screen and (max-width: 1280px) {
@@ -1388,7 +1413,12 @@ ol.list-mobile li:nth-child( n + 5 ) {
 }
 
 .tablet-about .project-purpose .content-blocks:first-child .content-block__text-container p,
-.tablet-about .project-purpose .content-blocks:first-child .content-block__text-container ul {
+.tablet-about .project-purpose .content-blocks:first-child .content-block__text-container ul,
+.tablet-about .about-project .content-block__text-container h2 {
+  width: 100%;
+}
+
+.tablet-howto .content-container.summary .content-blocks .content-block__text-container h2 {
   width: 100%;
 }
 
