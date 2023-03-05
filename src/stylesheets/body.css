@@ -505,11 +505,12 @@ body .about-page-wrapper {
   .sector-logo img {
     height: 24px;
   }
+}
 
+@media screen and (max-width: 1254px) {
   .hide-on-mobile {
     display: none !important;
   }
-
   .hide-on-desktop {
     display: flex !important;
   }
