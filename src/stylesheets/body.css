@@ -235,6 +235,10 @@ body .calculator-wrapper .calculator-blocks .calculator-inputs {
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
+.calculator-wrapper {
+  flex-direction: column;
+}
+
 body .calculator-wrapper,
 body .how-to-use-wrapper,
 body .about-page-wrapper {
@@ -515,6 +519,8 @@ body .about-page-wrapper {
   background: none;
   border-radius: 50px;
   border: none;
+  display: flex;
+    align-items: center;
 }
 
 .share_link svg {
