@@ -340,7 +340,34 @@ body .about-page-wrapper {
   color: #4E4E4E;
   right: 130px;
   top: 300px;
+  bottom: unset;
   background: #fff;
+}
+
+@media screen and (max-width: 1281px) {
+  .gauge-tooltip-h {
+    right: 140px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .gauge-tooltip-h {
+    right: 45px;
+  }
+}
+
+
+@media screen and (max-width: 834px) {
+  .gauge-tooltip-h {
+    right: 140px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .gauge-tooltip-h {
+    right: 25px;
+    bottom: 115px;
+  }
 }
 
 .gauge-vertical {
