@@ -338,11 +338,17 @@ body .about-page-wrapper {
   font-family: Rubik;
   font-weight: 400;
   color: #4E4E4E;
-  right: 130px;
-  top: 300px;
   bottom: unset;
   background: #fff;
 }
+
+@media screen and (min-width: 1281px) {
+  .gauge-tooltip-h {
+    right: 130px;
+    top: 300px;
+  }
+}
+
 
 @media screen and (max-width: 1281px) {
   .gauge-tooltip-h {
