@@ -227,6 +227,8 @@
       $('.modal-sectors').hide();
       $('.modal-ambitions').hide();
       $(".backdrop").removeClass("visible");
+      //hide-overflow
+      $("body").removeClass("hide-overflow");
 
       // menu
       $('.modal-mask').removeClass("open");
