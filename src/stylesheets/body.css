@@ -941,12 +941,27 @@ body .block-wrapper .block-container .project-purpose {
     font-size: 13px;
   }
 
-  .mobile-sections ul {
+  .mobile-sections ul,
+  .modal-project-about ul,
+  .modal-how-to-use ul {
     color: #49494D;
     padding-left: 25px;
     font-family: "Rubik";
     font-size: 13px;
     margin-bottom: 30px;
+  }
+
+  .modal-project-about ul li,
+  .modal-how-to-use ul li {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+
+    /* Icons/Dark Dark Grey */
+
+    color: #49494D;
   }
 
   .mobile-sections .mobile-image {
