@@ -1810,10 +1810,15 @@ nav.navigation-modal-windows {
     width: 100%;
   }
 }
+
+@media screen and (min-width: 730px) {
+  .footer-wrapper .footer-blocks .footer-block__upper .flex-container__footer-list .footer-list-container .footer-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media screen and (max-width: 730px) {
   .footer-wrapper .footer-blocks .footer-block__upper .flex-container__footer-list .footer-list-container .footer-list {
     column-gap: 85px;
-    grid-template-columns: repeat(2, 1fr);
     width: 100%;
     margin-bottom: 80px;
   }
