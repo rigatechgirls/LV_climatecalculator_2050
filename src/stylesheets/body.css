@@ -812,6 +812,7 @@ body .block-wrapper .block-container .project-purpose {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  border-radius: 4px;
 }
 
 .modal-sections-mask .content-container.sections .content-blocks .content-block.tablet-sections,
@@ -878,13 +879,13 @@ body .block-wrapper .block-container .project-purpose {
   }
 
   .modal-sections-mask .content-container.sections .content-blocks .content-block .tablet-sections ul,
-  .modal-sections-mask .content-container.sections .content-blocks .content-block .tablet-sections ol {
+  .modal-sections-mask .content-container.sections .content-blocks .tablet-sections ol {
     padding-left: 20px;
     box-sizing: border-box;
   }
 
   .modal-sections-mask .content-container.sections .content-blocks .content-block .tablet-sections ul li,
-  .modal-sections-mask .content-container.sections .content-blocks .content-block .tablet-sections ol li {
+  .modal-sections-mask .content-container.sections .content-blocks .tablet-sections ol li {
     font-family: "Rubik";
     font-style: normal;
     font-weight: 400;
