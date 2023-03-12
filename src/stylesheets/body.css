@@ -276,6 +276,7 @@ body .about-page-wrapper {
 
 .gauge-horizontal {
   display: none;
+  position: relative;
 }
 
 .gauge-info {
