@@ -161,7 +161,7 @@
       $('#demand_chart').hide();
       $('#emissions_chart').show();
 
-      $(this).addClass('chart-selected');
+      $('.show_emissions').addClass('chart-selected');
       $('.show_demand').removeClass('chart-selected');
       $('.show_supply').removeClass('chart-selected');
 
@@ -180,7 +180,7 @@
       $('#demand_chart').hide();
       $('#emissions_chart').hide();
 
-      $(this).addClass('chart-selected');
+      $('.show_supply').addClass('chart-selected');
       $('.show_demand').removeClass('chart-selected');
       $('.show_emissions').removeClass('chart-selected');
 
@@ -199,7 +199,7 @@
       $('#demand_chart').show();
       $('#emissions_chart').hide();
 
-      $(this).addClass('chart-selected');
+      $('.show_demand').addClass('chart-selected');
       $('.show_supply').removeClass('chart-selected');
       $('.show_emissions').removeClass('chart-selected');
 
