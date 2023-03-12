@@ -282,6 +282,10 @@ body .about-page-wrapper {
   flex-direction: row;
 }
 
+.about-page-wrapper .project-purpose .content-wrapper {
+  flex-wrap: wrap;
+}
+
 .about-page-wrapper .about-project .content-block__img-container {
   flex-direction: column;
 }
@@ -1563,4 +1567,8 @@ ol.list-mobile li:nth-child( n + 5 ) {
 
 .subtab-menu-share {
   position: relative;
+}
+
+.content-blocks.title-container {
+  width: 100%;
 }
