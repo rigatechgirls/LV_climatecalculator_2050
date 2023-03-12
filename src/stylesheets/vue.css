@@ -1795,7 +1795,7 @@ nav.navigation-modal-windows {
 }
 .footer-wrapper .footer-blocks .footer-block__upper .flex-container__footer-list .footer-list-container .footer-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
   padding: 0;
   margin: auto;
   column-gap: 85px;
@@ -1813,6 +1813,7 @@ nav.navigation-modal-windows {
 @media screen and (max-width: 730px) {
   .footer-wrapper .footer-blocks .footer-block__upper .flex-container__footer-list .footer-list-container .footer-list {
     column-gap: 85px;
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
     margin-bottom: 80px;
   }
