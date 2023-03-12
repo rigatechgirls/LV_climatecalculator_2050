@@ -862,12 +862,14 @@ body .block-wrapper .block-container .project-purpose {
     display: block;
   }
 
-  .modal-sections-mask .content-container.sections .content-blocks .content-block .tablet-sections ul {
+  .modal-sections-mask .content-container.sections .content-blocks .content-block .tablet-sections ul,
+  .modal-sections-mask .content-container.sections .content-blocks .content-block .desktop-sections ul {
     padding-left: 20px;
     box-sizing: border-box;
   }
 
-  .modal-sections-mask .content-container.sections .content-blocks .content-block .tablet-sections ul li{
+  .modal-sections-mask .content-container.sections .content-blocks .content-block .tablet-sections ul li,
+  .modal-sections-mask .content-container.sections .content-blocks .content-block .desktop-sections ul li {
     font-family: "Rubik";
     font-style: normal;
     font-weight: 400;
