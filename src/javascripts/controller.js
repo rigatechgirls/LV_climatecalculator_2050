@@ -167,6 +167,10 @@
 
       $('.current-chart-title').text($(this).text());
       $('.mobile-charts-sub-menu').removeClass('sub-menu');
+
+      $('.mobile-charts-sub-menu .menu-item-supply').show();
+      $('.mobile-charts-sub-menu .menu-item-emissions').hide();
+      $('.mobile-charts-sub-menu .menu-item-demand').show();
     });
 
     $('.show_supply').on('click touchend', function(event){
@@ -182,6 +186,10 @@
 
       $('.current-chart-title').text($(this).text());
       $('.mobile-charts-sub-menu').removeClass('sub-menu');
+
+      $('.mobile-charts-sub-menu .menu-item-supply').hide();
+      $('.mobile-charts-sub-menu .menu-item-emissions').show();
+      $('.mobile-charts-sub-menu .menu-item-demand').show();
     });
 
     $('.show_demand').on('click touchend', function(event){
@@ -197,6 +205,10 @@
 
       $('.current-chart-title').text($(this).text());
       $('.mobile-charts-sub-menu').removeClass('sub-menu');
+
+      $('.mobile-charts-sub-menu .menu-item-supply').show();
+      $('.mobile-charts-sub-menu .menu-item-emissions').show();
+      $('.mobile-charts-sub-menu .menu-item-demand').hide();
     });
 
     $(".nav-hamburger").on('click touchend', function(event){

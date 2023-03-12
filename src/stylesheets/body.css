@@ -344,40 +344,6 @@ body .about-page-wrapper {
   background: #fff;
 }
 
-/* @media screen and (min-width: 1281px) {
-  .gauge-tooltip-h {
-    right: 130px;
-    top: 300px;
-  }
-}
-
-
-@media screen and (max-width: 1281px) {
-  .gauge-tooltip-h {
-    right: 140px;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .gauge-tooltip-h {
-    right: 45px;
-  }
-}
-
-
-@media screen and (max-width: 834px) {
-  .gauge-tooltip-h {
-    right: 140px;
-  }
-} */
-
-/* @media screen and (max-width: 770px) {
-  .gauge-tooltip-h {
-    right: -15px;
-    bottom: 75px;
-  }
-} */
-
 .gauge-vertical {
   display: inline-block;
 }
@@ -579,6 +545,10 @@ body .about-page-wrapper {
   display: none;
   z-index: 9;
   background: #fff;
+}
+
+.menu-item-demand {
+  display: none;
 }
 
 .charts-dropdown .menu-item {
