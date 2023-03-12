@@ -199,7 +199,7 @@ window.twentyfifty.views.primary_energy_chart = function() {
       left: Math.round(gaugeResults*100)+'%',
     });
 
-    $('.label-percent').text((Math.sign(percent) === 1 ? "-" : "")+Math.round(percent*100)+'%');
+    $('.label-percent').text((Math.sign(percent) === 1 ? "-" : "")+Math.abs(Math.round(percent*100))+'%');
 
     $('.gauge-percent').text(Math.round(percent*100));
 
