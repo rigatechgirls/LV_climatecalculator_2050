@@ -229,7 +229,7 @@
       $(".backdrop").removeClass("visible");
 
       // menu
-      $('.modal-mask').hide();
+      $('.modal-mask').removeClass("open");
       $('.modal-sections-mask, .modal-how-to-use-mask').hide();
       $('.modal-calculator-structure-mask, .modal-calculator-scenarious-mask').hide();
       $('.modal-about-mask, .modal-goals-mask, .modal-tablet-mask, .modal-mask').hide();
