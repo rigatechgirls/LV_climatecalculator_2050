@@ -844,6 +844,21 @@ body .block-wrapper .block-container .project-purpose {
   }
 }
 
+.modal-sections-mask .content-container.sections .content-blocks .content-block .desktop-sections ul {
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.modal-sections-mask .content-container.sections .content-blocks .content-block .desktop-sections ul li {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: -0.04em;
+  color: #49494D;
+}
+
 @media screen and (min-width: 834px) and (max-width: 1280px) {
   .modal-sections-mask.modal-sectors .modal-sections-wrapper ,
   .modal-sections-mask.modal-ambitions .modal-sections-wrapper {
@@ -862,14 +877,12 @@ body .block-wrapper .block-container .project-purpose {
     display: block;
   }
 
-  .modal-sections-mask .content-container.sections .content-blocks .content-block .tablet-sections ul,
-  .modal-sections-mask .content-container.sections .content-blocks .content-block .desktop-sections ul {
+  .modal-sections-mask .content-container.sections .content-blocks .content-block .tablet-sections ul {
     padding-left: 20px;
     box-sizing: border-box;
   }
 
-  .modal-sections-mask .content-container.sections .content-blocks .content-block .tablet-sections ul li,
-  .modal-sections-mask .content-container.sections .content-blocks .content-block .desktop-sections ul li {
+  .modal-sections-mask .content-container.sections .content-blocks .content-block .tablet-sections ul li {
     font-family: "Rubik";
     font-style: normal;
     font-weight: 400;
