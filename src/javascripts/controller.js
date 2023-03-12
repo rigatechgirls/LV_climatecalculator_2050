@@ -217,13 +217,25 @@
       $(".nav-sidebar").toggleClass("open");
     });
 
-    $(".backdrop, .modal-sections-mask").on('click touchend', function(event){
+    $(".backdrop, .modal-sections-mask, .modal-how-to-use-mask,"+
+      ".modal-calculator-structure-mask, .modal-calculator-scenarious-mask,"+
+      " .modal-about-mask, .modal-goals-mask, .modal-tablet-mask, "+
+      " .modal-mask").on('click touchend', function(event){
       event.stopPropagation();
       event.preventDefault();
       $(".calculator-inputs").removeClass("open");
       $('.modal-sectors').hide();
       $('.modal-ambitions').hide();
       $(".backdrop").removeClass("visible");
+
+      // menu
+      $('.modal-mask').hide();
+      $('.modal-sections-mask, .modal-how-to-use-mask').hide();
+      $('.modal-calculator-structure-mask, .modal-calculator-scenarious-mask').hide();
+      $('.modal-about-mask, .modal-goals-mask, .modal-tablet-mask, .modal-mask').hide();
+
+
+
     });
 
     $(".button-scenarious").on('click touchend', function(event){
