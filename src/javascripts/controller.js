@@ -161,12 +161,16 @@
       $('#demand_chart').hide();
       $('#emissions_chart').show();
 
-      $(this).addClass('chart-selected');
+      $('.show_emissions').addClass('chart-selected');
       $('.show_demand').removeClass('chart-selected');
       $('.show_supply').removeClass('chart-selected');
 
-      $('.current-chart-title').text($(this).text());
+      $('.current-chart-title span').text($(this).text());
       $('.mobile-charts-sub-menu').removeClass('sub-menu');
+
+      $('.mobile-charts-sub-menu .menu-item-supply').show();
+      $('.mobile-charts-sub-menu .menu-item-emissions').hide();
+      $('.mobile-charts-sub-menu .menu-item-demand').show();
     });
 
     $('.show_supply').on('click touchend', function(event){
@@ -176,12 +180,16 @@
       $('#demand_chart').hide();
       $('#emissions_chart').hide();
 
-      $(this).addClass('chart-selected');
+      $('.show_supply').addClass('chart-selected');
       $('.show_demand').removeClass('chart-selected');
       $('.show_emissions').removeClass('chart-selected');
 
-      $('.current-chart-title').text($(this).text());
+      $('.current-chart-title span').text($(this).text());
       $('.mobile-charts-sub-menu').removeClass('sub-menu');
+
+      $('.mobile-charts-sub-menu .menu-item-supply').hide();
+      $('.mobile-charts-sub-menu .menu-item-emissions').show();
+      $('.mobile-charts-sub-menu .menu-item-demand').show();
     });
 
     $('.show_demand').on('click touchend', function(event){
@@ -191,18 +199,51 @@
       $('#demand_chart').show();
       $('#emissions_chart').hide();
 
-      $(this).addClass('chart-selected');
+      $('.show_demand').addClass('chart-selected');
       $('.show_supply').removeClass('chart-selected');
       $('.show_emissions').removeClass('chart-selected');
 
-      $('.current-chart-title').text($(this).text());
+      $('.current-chart-title span').text($(this).text());
       $('.mobile-charts-sub-menu').removeClass('sub-menu');
+
+      $('.mobile-charts-sub-menu .menu-item-supply').show();
+      $('.mobile-charts-sub-menu .menu-item-emissions').show();
+      $('.mobile-charts-sub-menu .menu-item-demand').hide();
     });
 
     $(".nav-hamburger").on('click touchend', function(event){
       event.stopPropagation();
       event.preventDefault();
       $(".nav-sidebar").toggleClass("open");
+    });
+
+    $(".backdrop, .modal-sections-mask, .modal-how-to-use-mask,"+
+      ".modal-calculator-structure-mask, .modal-calculator-scenarious-mask,"+
+      " .modal-about-mask, .modal-goals-mask, .modal-tablet-mask, "+
+      " .modal-mask").on('click touchend', function(event){
+      event.stopPropagation();
+      event.preventDefault();
+      $(".calculator-inputs").removeClass("open");
+      $('.modal-sectors').hide();
+      $('.modal-ambitions').hide();
+      $(".backdrop").removeClass("visible");
+      //hide-overflow
+      $("body").removeClass("hide-overflow");
+
+      // menu
+      $('.modal-mask').removeClass("open");
+      $('.modal-sections-mask, .modal-how-to-use-mask').hide();
+      $('.modal-calculator-structure-mask, .modal-calculator-scenarious-mask').hide();
+      $('.modal-about-mask, .modal-goals-mask, .modal-tablet-mask').hide();
+
+
+
+    });
+
+
+    $(".modal-sections-block, .modal-tablet-block, .content-container, .modal-block").on('click touchend', function(event){
+      event.stopPropagation();
+      // event.preventDefault();
     });
 
     $(".button-scenarious").on('click touchend', function(event){
@@ -310,6 +351,7 @@
     // });
 
     $('.mobile-calculator-summary').on('click touchend', function(event){
+      event.stopPropagation();
       event.preventDefault();
 
       $('.modal-how-to-use').show();
@@ -322,6 +364,7 @@
 
 
     $('.mobile-calculator-structure').on('click touchend', function(event){
+      event.stopPropagation();
       event.preventDefault();
 
       $('.modal-calculator-structure').show();
@@ -335,6 +378,7 @@
 
 
     $('.mobile-calculator-scenarious').on('click touchend', function(event){
+      event.stopPropagation();
       event.preventDefault();
 
       $('.modal-calculator-scenarious').show();
@@ -348,6 +392,7 @@
 
 
     $('.mobile-project-about').on('click touchend', function(event){
+      event.stopPropagation();
       event.preventDefault();
 
       $('.modal-project-about').show();
@@ -358,6 +403,7 @@
 
 
     $('.mobile-project-goals').on('click touchend', function(event){
+      event.stopPropagation();
       event.preventDefault();
 
       $('.modal-project-goals').show();
@@ -379,12 +425,14 @@
 
 
     $('.menu-tablet-how-to-use').on('click touchend', function(event){
+      event.stopPropagation();
       event.preventDefault();
 
       $('.tablet-howto').show();
     });
 
     $('.menu-tablet-about').on('click touchend', function(event){
+      event.stopPropagation();
       event.preventDefault();
 
       $('.tablet-about').show();

@@ -96,6 +96,14 @@ body {
 
 body .calculator-wrapper .calculator-blocks {
 align-items: flex-start;
+width: 100%;
+box-sizing: border-box;
+}
+
+@media screen and (min-width: 1255px) {
+  body .calculator-wrapper .calculator-blocks {
+    padding: 50px 0 15px 0;
+    }
 }
 
 body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
@@ -144,6 +152,14 @@ body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
   flex: 1;
 }
 
+.levers .levers-sector-container .levers-sector {
+  padding: 0 5px 8px 10px;
+  justify-content: space-between;
+}
+
+.levers .levers-sector-container .levers-subsector-container {
+  padding: 7px 5px 12px 11px;
+}
 
 
 @media screen and (max-width: 834px) {
@@ -160,8 +176,12 @@ body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
   }
 
   .levers .levers-sector-container .levers-sector {
-    padding: 0 10px 8px 10px;
+    padding: 0 5px 8px 10px;
     justify-content: space-between;
+  }
+
+  .levers .levers-sector-container .levers-subsector-container {
+    padding: 7px 5px 12px 11px;
   }
 }
 
@@ -262,6 +282,10 @@ body .about-page-wrapper {
   flex-direction: row;
 }
 
+.about-page-wrapper .project-purpose .content-wrapper {
+  flex-wrap: wrap;
+}
+
 .about-page-wrapper .about-project .content-block__img-container {
   flex-direction: column;
 }
@@ -276,6 +300,7 @@ body .about-page-wrapper {
 
 .gauge-horizontal {
   display: none;
+  position: relative;
 }
 
 .gauge-info {
@@ -338,8 +363,8 @@ body .about-page-wrapper {
   font-family: Rubik;
   font-weight: 400;
   color: #4E4E4E;
-  right: 130px;
-  top: 300px;
+  right: -15px;
+  bottom: 75px;
   background: #fff;
 }
 
@@ -546,6 +571,10 @@ body .about-page-wrapper {
   background: #fff;
 }
 
+.menu-item-demand {
+  display: none;
+}
+
 .charts-dropdown .menu-item {
   background: #fff;
 }
@@ -575,6 +604,15 @@ body .about-page-wrapper {
 .hide-on-mobile {
   display: flex !important;
 }
+
+.hide-on-mobile.button-container .button__reset {
+  background: #DEA613;
+}
+.hide-on-mobile.button-container .button__reset:active {
+  background: #FFC627;
+}
+
+
 .hide-on-desktop {
   display: none !important;
 }
@@ -787,6 +825,7 @@ body .block-wrapper .block-container .project-purpose {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  border-radius: 4px;
 }
 
 .modal-sections-mask .content-container.sections .content-blocks .content-block.tablet-sections,
@@ -819,6 +858,21 @@ body .block-wrapper .block-container .project-purpose {
   }
 }
 
+.modal-sections-mask .content-container.sections .content-blocks .content-block .desktop-sections ul {
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.modal-sections-mask .content-container.sections .content-blocks .content-block .desktop-sections ul li {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: -0.04em;
+  color: #49494D;
+}
+
 @media screen and (min-width: 834px) and (max-width: 1280px) {
   .modal-sections-mask.modal-sectors .modal-sections-wrapper ,
   .modal-sections-mask.modal-ambitions .modal-sections-wrapper {
@@ -835,6 +889,23 @@ body .block-wrapper .block-container .project-purpose {
   .modal-sections-mask .content-container.steps .content-blocks .content-block.tablet-sections,
   .tablet-sections {
     display: block;
+  }
+
+  .modal-sections-mask .content-container.sections .content-blocks .content-block .tablet-sections ul,
+  .modal-sections-mask .content-container.sections .content-blocks .tablet-sections ol {
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .modal-sections-mask .content-container.sections .content-blocks .content-block .tablet-sections ul li,
+  .modal-sections-mask .content-container.sections .content-blocks .tablet-sections ol li {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.04em;
+    color: #49494D;
   }
 
   .modal-sections-mask .content-container.sections .content-blocks .content-block.desktop-sections,
@@ -870,12 +941,27 @@ body .block-wrapper .block-container .project-purpose {
     font-size: 13px;
   }
 
-  .mobile-sections ul {
+  .mobile-sections ul,
+  .modal-project-about ul,
+  .modal-how-to-use ul {
     color: #49494D;
     padding-left: 25px;
     font-family: "Rubik";
     font-size: 13px;
     margin-bottom: 30px;
+  }
+
+  .modal-project-about ul li,
+  .modal-how-to-use ul li {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+
+    /* Icons/Dark Dark Grey */
+
+    color: #49494D;
   }
 
   .mobile-sections .mobile-image {
@@ -1143,20 +1229,22 @@ color: #49494D;
 }
 
 .info-box {
+  bottom: -40px;
+  padding: 5px 13px;
   display: none;
   position: absolute;
-  bottom: 50px;
-  padding: 10px;
-  border-radius: 24px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  background-color: #fff;
-  border: 2px solid #49494D;
-  width: 110px;
+  width: 120px;
+  background: #646569;
+  border-radius: 4px;
   text-align: center;
-  box-shadow: 0 0 5px #888;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #F1F1F1;
+  box-sizing: border-box;
 }
 
 
@@ -1490,4 +1578,24 @@ ol.list-mobile li:nth-child( n + 5 ) {
 
 .tablet-about .project-purpose .content-blocks {
   padding-bottom: 0;
+}
+
+.subtab-menu-share {
+  position: relative;
+}
+
+.block-wrapper .block-container .content-container .content-blocks.title-container {
+  width: 100%;
+  flex: unset;
+}
+
+.block-wrapper .block-container .content-container .content-blocks.title-container .content-block__text-container h2 {
+  font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 27px;
+line-height: 32px;
+letter-spacing: -0.04em;
+color: #49494D;
+width: 100%;
 }
