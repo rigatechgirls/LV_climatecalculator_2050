@@ -343,7 +343,7 @@ body .about-page-wrapper {
   background: #fff;
 }
 
-@media screen and (min-width: 1281px) {
+/* @media screen and (min-width: 1281px) {
   .gauge-tooltip-h {
     right: 130px;
     top: 300px;
@@ -368,12 +368,12 @@ body .about-page-wrapper {
   .gauge-tooltip-h {
     right: 140px;
   }
-}
+} */
 
 @media screen and (max-width: 770px) {
   .gauge-tooltip-h {
-    right: 25px;
-    bottom: 115px;
+    right: -15px;
+    bottom: 75px;
   }
 }
 
