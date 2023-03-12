@@ -725,7 +725,7 @@ nav.navigation-modal-windows {
   text-align: center;
   letter-spacing: -0.02em;
   color: #FFFFFF;
-  background: #829A59;
+  background: #DEA613;
   border-radius: 4px;
   border: none;
   white-space: nowrap;
@@ -785,13 +785,13 @@ nav.navigation-modal-windows {
   background: #829A59;
 }
 .button-container .button__reset:active {
-  background: #FFC627;
+  background: #B5CC8D;
 }
 .button-container .button__results {
   background: #DEA613;
 }
 .button-container .button__results:active {
-  background: #B5CC8D;
+  background: #FFC627;
 }
 .button-container .button:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -2179,13 +2179,13 @@ nav.navigation-modal-windows {
   background: #829A59;
 }
 .button-container .button__reset:active {
-  background: #FFC627;
+  background: #B5CC8D;
 }
 .button-container .button__results {
-  background: #829A59;
+  background: #DEA613;
 }
 .button-container .button__results:active {
-  background: #B5CC8D;
+  background: #FFC627;
 }
 .button-container .button:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
