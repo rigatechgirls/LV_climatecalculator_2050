@@ -96,6 +96,8 @@ body {
 
 body .calculator-wrapper .calculator-blocks {
 align-items: flex-start;
+width: 100%;
+box-sizing: border-box;
 }
 
 body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
