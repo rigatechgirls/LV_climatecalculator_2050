@@ -1168,6 +1168,19 @@ color: #49494D;
   width: 120px;
   background: #646569;
   border-radius: 4px;
+  text-align: center;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  letter-spacing: -0.02em;
+
+  /* Primary/Light Light Grey */
+
+  color: #F1F1F1;
 }
 
 
