@@ -217,12 +217,13 @@
       $(".nav-sidebar").toggleClass("open");
     });
 
-    $(".backdrop").on('click touchend', function(event){
+    $(".backdrop, .modal-sections-mask").on('click touchend', function(event){
       event.stopPropagation();
       event.preventDefault();
       $(".calculator-inputs").removeClass("open");
       $('.modal-sectors').hide();
       $('.modal-ambitions').hide();
+      $(".backdrop").removeClass("visible");
     });
 
     $(".button-scenarious").on('click touchend', function(event){
