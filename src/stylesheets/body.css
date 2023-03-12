@@ -1571,4 +1571,15 @@ ol.list-mobile li:nth-child( n + 5 ) {
 
 .content-blocks.title-container {
   width: 100%;
+  flex: unset;
+}
+
+.content-blocks.title-container h2 {
+  font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 27px;
+line-height: 32px;
+letter-spacing: -0.04em;
+color: #49494D;
 }
