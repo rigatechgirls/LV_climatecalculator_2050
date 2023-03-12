@@ -100,7 +100,7 @@ width: 100%;
 box-sizing: border-box;
 }
 
-@media screen and (min-width: 1255) {
+@media screen and (min-width: 1255px) {
   body .calculator-wrapper .calculator-blocks {
     padding: 50px 0 15px 0;
     }
