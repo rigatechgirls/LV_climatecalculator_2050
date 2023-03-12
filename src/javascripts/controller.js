@@ -240,6 +240,12 @@
 
     });
 
+
+    $(".modal-sections-block, .modal-tablet-block, .content-container, .modal-block").on('click touchend', function(event){
+      event.stopPropagation();
+      event.preventDefault();
+    });
+
     $(".button-scenarious").on('click touchend', function(event){
       event.stopPropagation();
       event.preventDefault();
