@@ -1569,12 +1569,12 @@ ol.list-mobile li:nth-child( n + 5 ) {
   position: relative;
 }
 
-.content-blocks.title-container {
+.block-wrapper .block-container .content-container .content-blocks.title-container {
   width: 100%;
   flex: unset;
 }
 
-.content-blocks.title-container h2 {
+.block-wrapper .block-container .content-container .content-blocks.title-container .content-block__text-container h2 {
   font-family: 'Rubik';
 font-style: normal;
 font-weight: 500;
