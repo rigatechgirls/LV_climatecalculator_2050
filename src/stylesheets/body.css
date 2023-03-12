@@ -100,6 +100,12 @@ width: 100%;
 box-sizing: border-box;
 }
 
+@media screen and (max-width: 1255) {
+  body .calculator-wrapper .calculator-blocks {
+    padding: 50px 0 15px 0;
+    }
+}
+
 body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
   margin-bottom: 78px;
 }
