@@ -165,7 +165,7 @@
       $('.show_demand').removeClass('chart-selected');
       $('.show_supply').removeClass('chart-selected');
 
-      $('.current-chart-title').text($(this).text());
+      $('.current-chart-title span').text($(this).text());
       $('.mobile-charts-sub-menu').removeClass('sub-menu');
 
       $('.mobile-charts-sub-menu .menu-item-supply').show();
@@ -184,7 +184,7 @@
       $('.show_demand').removeClass('chart-selected');
       $('.show_emissions').removeClass('chart-selected');
 
-      $('.current-chart-title').text($(this).text());
+      $('.current-chart-title span').text($(this).text());
       $('.mobile-charts-sub-menu').removeClass('sub-menu');
 
       $('.mobile-charts-sub-menu .menu-item-supply').hide();
@@ -203,7 +203,7 @@
       $('.show_supply').removeClass('chart-selected');
       $('.show_emissions').removeClass('chart-selected');
 
-      $('.current-chart-title').text($(this).text());
+      $('.current-chart-title span').text($(this).text());
       $('.mobile-charts-sub-menu').removeClass('sub-menu');
 
       $('.mobile-charts-sub-menu .menu-item-supply').show();
