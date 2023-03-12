@@ -152,6 +152,10 @@ body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
   flex: 1;
 }
 
+.levers .levers-sector-container .levers-sector {
+  padding: 0 5px 8px 10px;
+  justify-content: space-between;
+}
 
 
 @media screen and (max-width: 834px) {
