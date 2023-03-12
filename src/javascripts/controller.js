@@ -343,6 +343,7 @@
     // });
 
     $('.mobile-calculator-summary').on('click touchend', function(event){
+      event.stopPropagation();
       event.preventDefault();
 
       $('.modal-how-to-use').show();
@@ -355,6 +356,7 @@
 
 
     $('.mobile-calculator-structure').on('click touchend', function(event){
+      event.stopPropagation();
       event.preventDefault();
 
       $('.modal-calculator-structure').show();
@@ -368,6 +370,7 @@
 
 
     $('.mobile-calculator-scenarious').on('click touchend', function(event){
+      event.stopPropagation();
       event.preventDefault();
 
       $('.modal-calculator-scenarious').show();
@@ -381,6 +384,7 @@
 
 
     $('.mobile-project-about').on('click touchend', function(event){
+      event.stopPropagation();
       event.preventDefault();
 
       $('.modal-project-about').show();
@@ -391,6 +395,7 @@
 
 
     $('.mobile-project-goals').on('click touchend', function(event){
+      event.stopPropagation();
       event.preventDefault();
 
       $('.modal-project-goals').show();
@@ -412,12 +417,14 @@
 
 
     $('.menu-tablet-how-to-use').on('click touchend', function(event){
+      event.stopPropagation();
       event.preventDefault();
 
       $('.tablet-howto').show();
     });
 
     $('.menu-tablet-about').on('click touchend', function(event){
+      event.stopPropagation();
       event.preventDefault();
 
       $('.tablet-about').show();
