@@ -217,6 +217,14 @@
       $(".nav-sidebar").toggleClass("open");
     });
 
+    $(".backdrop").on('click touchend', function(event){
+      event.stopPropagation();
+      event.preventDefault();
+      $(".calculator-inputs").removeClass("open");
+      $('.modal-sectors').hide();
+      $('.modal-ambitions').hide();
+    });
+
     $(".button-scenarious").on('click touchend', function(event){
       event.stopPropagation();
       event.preventDefault();
