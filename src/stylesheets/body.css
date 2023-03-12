@@ -157,6 +157,10 @@ body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
   justify-content: space-between;
 }
 
+.levers .levers-sector-container .levers-subsector-container {
+  padding: 7px 5px 12px 11px;
+}
+
 
 @media screen and (max-width: 834px) {
   .calculator-wrapper .calculator-blocks .calculator-inputs .levers-container .levers-table {
@@ -172,8 +176,12 @@ body .calculator-wrapper .calculator-blocks .calculator-outputs .subtab-menu {
   }
 
   .levers .levers-sector-container .levers-sector {
-    padding: 0 10px 8px 10px;
+    padding: 0 5px 8px 10px;
     justify-content: space-between;
+  }
+
+  .levers .levers-sector-container .levers-subsector-container {
+    padding: 7px 5px 12px 11px;
   }
 }
 
