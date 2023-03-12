@@ -862,6 +862,21 @@ body .block-wrapper .block-container .project-purpose {
     display: block;
   }
 
+  .modal-sections-mask .content-container.sections .content-blocks .content-block.tablet-sections ul {
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .modal-sections-mask .content-container.sections .content-blocks .content-block.tablet-sections ul li{
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.04em;
+    color: #49494D;
+  }
+
   .modal-sections-mask .content-container.sections .content-blocks .content-block.desktop-sections,
   .modal-sections-mask .content-container.steps .content-blocks .content-block.desktop-sections,
   .desktop-sections {
