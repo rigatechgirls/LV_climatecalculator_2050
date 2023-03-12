@@ -601,10 +601,10 @@ body .about-page-wrapper {
   display: flex !important;
 }
 
-.hide-on-mobile .button-container .button__reset {
+.hide-on-mobile.button-container .button__reset {
   background: #DEA613;
 }
-.hide-on-mobile  .button-container .button__reset:active {
+.hide-on-mobile.button-container .button__reset:active {
   background: #FFC627;
 }
 
