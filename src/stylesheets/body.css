@@ -600,6 +600,15 @@ body .about-page-wrapper {
 .hide-on-mobile {
   display: flex !important;
 }
+
+.hide-on-mobile .button-container .button__reset {
+  background: #DEA613;
+}
+.hide-on-mobile  .button-container .button__reset:active {
+  background: #FFC627;
+}
+
+
 .hide-on-desktop {
   display: none !important;
 }
