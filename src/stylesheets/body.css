@@ -1245,6 +1245,7 @@ color: #49494D;
   letter-spacing: -0.02em;
   color: #F1F1F1;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 
@@ -1447,6 +1448,10 @@ ol.list-tablet li:nth-child( n + 5 ) {
 
   .scenarious .container-flex img:first-child {
     margin-right: 30px !important;
+  }
+
+  .modal-project-goals .project-purpose img {
+    max-width: 310px;
   }
 
   .project-purpose img {
